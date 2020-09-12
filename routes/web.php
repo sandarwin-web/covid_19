@@ -26,5 +26,5 @@ Route::get('/testing',function ($value='')
 });
 Route::resource('cities','CityController');
 Route::get('dashboard', 'BackendController@dashboardfun'
-)->name('dashboardpage');
+)->name('dashboardpage');//wyne
 
