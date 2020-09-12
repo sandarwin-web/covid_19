@@ -24,11 +24,20 @@ Route::get('/testing',function ($value='')
 {
 	return 'This is testing page!';
 });
-Route::resource('cities','CityController');
-Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+
 
 
 //Route::resource('students','StudentController');
 
 //Route::resource('actives','ActiveController');
+
+
+Route::get('dashboard', 'BackendController@dashboardfun'
+)->name('dashboardpage');
+
+
+
+//Route::resource('cities','CityController');
+
+
 
