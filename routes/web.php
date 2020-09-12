@@ -25,4 +25,6 @@ Route::get('/testing',function ($value='')
 	return 'This is testing page!';
 });
 
-Route::resource('students','StudentController');
+//Route::resource('students','StudentController');
+
+//Route::resource('actives','ActiveController');
