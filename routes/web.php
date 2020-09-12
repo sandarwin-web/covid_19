@@ -34,15 +34,14 @@ Route::get('/testing',function ($value='')
 
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');//wyne
+// Route::resource('cities','CityController');
+
+
+
+
+
 Route::resource('cities','CityController');
 
-
-
-<<<<<<< HEAD
-
-Route::resource('cities','CityController');
-=======
->>>>>>> c503d50c428cbb3dedc9cc87a4e7f6e6dce18b7d
 
 
 
