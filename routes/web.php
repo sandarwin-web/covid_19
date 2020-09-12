@@ -37,7 +37,7 @@ Route::get('dashboard', 'BackendController@dashboardfun'
 
 
 
-//Route::resource('cities','CityController');
+Route::resource('cities','CityController');
 
 
 
