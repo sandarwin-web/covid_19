@@ -3,6 +3,11 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+// use Illuminate\Support\Facades\Schema;
+// use Illuminate\Support\View;
+
+
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,9 +25,8 @@ class AppServiceProvider extends ServiceProvider
      * Bootstrap any application services.
      *
      * @return void
-     */
-    public function boot()
+     */    public function boot()
     {
-        //
+
     }
 }
