@@ -26,3 +26,6 @@ Route::get('/testing',function ($value='')
 });
 
 Route::resource('students','StudentController');
+
+Route::resource('deceaseds','DeceasedController@deceased');
+
