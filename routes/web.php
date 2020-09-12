@@ -29,7 +29,7 @@ Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 
 
-//Route::resource('cities','CityController');
+Route::resource('cities','CityController');
 
 
 
