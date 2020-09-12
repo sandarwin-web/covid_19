@@ -12,6 +12,6 @@ class CityTableSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\City::class,5)->create();
+        factory(App\City::class,6)->create();
     }
 }
