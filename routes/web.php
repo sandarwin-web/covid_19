@@ -28,3 +28,5 @@ Route::get('/testing',function ($value='')
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 
+
+
