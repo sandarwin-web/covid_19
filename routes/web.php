@@ -24,7 +24,7 @@ Route::get('/testing',function ($value='')
 {
 	return 'This is testing page!';
 });
-Route::resource('cities','CityController');
+
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 
