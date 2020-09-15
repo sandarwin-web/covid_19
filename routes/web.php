@@ -13,21 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
 
-
-    return 'by Khin Sapal';
-
-});
-
-Route::get('/testing',function ($value='')
-{
-	return 'This is testing page!';
-});
 
 Route::get('dashboard', 'BackendController@dashboardfun'
-)->name('dashboardpage');//wyne
+)->name('dashboardpage');
 Route::resource('cities','CityController');
+Route::resource('helpservices','HelpserviceController');
+Route::resource('recovereds','RecoveredController');
+Route::resource('comfirmeds','ComfirmedController');
 
 
 

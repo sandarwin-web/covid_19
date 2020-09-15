@@ -12,6 +12,13 @@ class CityTableSeeder extends Seeder
     public function run()
     {
         //
-        factory(App\City::class,6)->create();
+        factory(App\City::class,3)->create()->each(
+            function($city){
+                //seed the relation with 3 subcategoriese
+            $helpservices =factory(App\Helpservice::class,3)->make();
+                $city->helpservices()->saveMany($helpservices);//relationship in category model
+
+            });
+
     }
 }
