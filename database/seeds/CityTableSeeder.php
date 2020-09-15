@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\City;
 
 class CityTableSeeder extends Seeder
 {
@@ -11,12 +12,8 @@ class CityTableSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
-        
-        factory(App\City::class,5)->create();
-=======
-        //
-        factory(App\City::class,6)->create();
->>>>>>> d0c56ddd87497b60c2605aec5582e51ffa22dedd
+
+        factory(App\City::class,2)->create();
+
     }
 }

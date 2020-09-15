@@ -36,9 +36,8 @@ Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');//wyne
 // Route::resource('cities','CityController');
 
-
-
-
+Route::resource('deceaseds','DeceasedController');
+Route::resource('testeds','TestedController');
 
 Route::resource('cities','CityController');
 
