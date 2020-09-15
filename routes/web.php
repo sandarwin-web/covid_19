@@ -13,23 +13,41 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
 
 
-    return 'by Khin Sapal';
+//     return 'by Khin Sapal';
 
-});
+// });
 
-Route::get('/testing',function ($value='')
-{
-	return 'This is testing page!';
-});
+// Route::get('/testing',function ($value='')
+// {
+// 	return 'This is testing page!';
+// });
 
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 
+Route::get('/', 'PageController@mainfun'
+)->name('mainpage');
+
+Route::get('about', 'PageController@aboutfun'
+)->name('aboutpage');
+
+Route::get('prevention', 'PageController@preventionfun'
+)->name('peventionpage');
+
+Route::get('contact', 'PageController@contactfun'
+)->name('contactpage');
+
+
 
 Route::resource('cities','CityController');
 
+Route::resource('quarantines','QuarantineController');
+
+Route::resource('positives','PositiveController');
+
+Route::resource('actives','ActiveController');
 
 

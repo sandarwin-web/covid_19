@@ -57,8 +57,28 @@
       <!-- Nav Item - Pages Collapse Menu -->
       
 
-      <!-- Nav Item - Charts -->
-     
+      
+       <!-- Nav Item - Charts -->
+      <li class="nav-item {{ (request()->segment(1) == 'items')? 'active' : '' }}">
+        <a class="nav-link" href="{{route('quarantines.index')}}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          {{-- <i class="icofont-home"></i> --}}
+          <span>quarantines</span></a>
+      </li>
+ 
+      <!-- Nav Item - Tables -->
+      <li class="nav-item {{ (request()->segment(1) == 'orders')? 'active' : '' }}">
+        <a class="nav-link" href="{{route('actives.index')}}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>actives</span></a>
+      </li>
+
+       <!-- Nav Item - Tables -->
+      <li class="nav-item {{ (request()->segment(1) == 'orders')? 'active' : '' }}">
+        <a class="nav-link" href="{{route('positives.index')}}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>positives</span></a>
+      </li>
 
       
       <!-- Divider -->
