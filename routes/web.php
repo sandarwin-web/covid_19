@@ -13,17 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
 
 
-//     return 'by Khin Sapal';
 
-// });
-
-// Route::get('/testing',function ($value='')
-// {
-// 	return 'This is testing page!';
-// });
 
 
 
@@ -31,9 +23,7 @@ use Illuminate\Support\Facades\Route;
 
 //Route::resource('actives','ActiveController');
 
-
-Route::get('dashboard', 'BackendController@dashboardfun'
-)->name('dashboardpage');//wyne
+//wyne
 // Route::resource('cities','CityController');
 
 
@@ -51,16 +41,17 @@ Route::get('contact', 'PageController@contactfun'
 
 
 
+Route::get('dashboard', 'BackendController@dashboardfun'
+)->name('dashboardpage');
+Route::resource('cities','CityController');
+Route::resource('helpservices','HelpserviceController');
+Route::resource('recovereds','RecoveredController');
+Route::resource('comfirmeds','ComfirmedController');
 Route::resource('deceaseds','DeceasedController');
 Route::resource('testeds','TestedController');
-
-
-Route::resource('cities','CityController');
-
+//sdw
 Route::resource('quarantines','QuarantineController');
-
 Route::resource('positives','PositiveController');
-
 Route::resource('actives','ActiveController');
 
 

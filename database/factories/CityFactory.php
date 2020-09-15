@@ -3,6 +3,9 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\City;
+use App\Helpservice;
+use App\Recovered;
+
 use Faker\Generator as Faker;
 use App\Quarantine;
 use App\Positive;
@@ -20,7 +23,18 @@ $factory->define(City::class, function (Faker $faker) {
            // 'name'=>$faker->sentence($nbWords=3)
 
     ];
+    });
+
+    $factory->define(Helpservice::class, function (Faker $faker) {
+    return [
+        'name' =>$faker->sentence($nbWords =3),
+        'address' =>$faker->sentence($nbWords =3),
+         'time' =>$faker->sentence($nbWords =3),
+          'opening_day' =>$faker->sentence($nbWords =3),
+           'contact' =>$faker->sentence($nbWords =3)
+    ];
 });
+<<<<<<< HEAD
 
 $factory->define(Quarantine::class,function (Faker $faker)
 {
@@ -58,3 +72,6 @@ $factory->define(Active::class,function (Faker $faker)
 		'qty'=>$faker->qty
 	];
 });
+=======
+   
+>>>>>>> 81c14407ce1a4da6c29c084b9339548c1522f122

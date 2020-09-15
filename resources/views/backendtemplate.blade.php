@@ -89,7 +89,36 @@
           <span>positives</span></a>
       </li>
 
-      
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('cities.index') }}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>City</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('comfirmeds.index') }}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Comfirmed</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('helpservices.index') }}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Helpservice</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('recovereds.index') }}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Recovered</span></a>
+      </li>
+
+     
+
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -291,14 +320,13 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <!-- <div class="container-fluid"> -->
+        <div class="container-fluid">
 
           <!-- Page Heading -->
           @yield('content')
       <!-- End of Main Content -->
 
       <!-- Footer -->
-    </div>
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">

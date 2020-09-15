@@ -11,6 +11,7 @@ class city extends Model
     	'name',
     ];
 
+
      public function quarantines($value='')
     {
     	return $this->hasMany('App\Quarantine');
@@ -25,4 +26,11 @@ class city extends Model
     {
         return $this->hasMany('App\Active');
     }
+
+     public function helpservices($value='')
+    {
+    	return $this->hasMany('App\Helpservice');
+    }
+
+
 }
