@@ -25,8 +25,17 @@ use Illuminate\Support\Facades\Route;
 // 	return 'This is testing page!';
 // });
 
+
+
+//Route::resource('students','StudentController');
+
+//Route::resource('actives','ActiveController');
+
+
 Route::get('dashboard', 'BackendController@dashboardfun'
-)->name('dashboardpage');
+)->name('dashboardpage');//wyne
+// Route::resource('cities','CityController');
+
 
 Route::get('/', 'PageController@mainfun'
 )->name('mainpage');
@@ -42,6 +51,10 @@ Route::get('contact', 'PageController@contactfun'
 
 
 
+Route::resource('deceaseds','DeceasedController');
+Route::resource('testeds','TestedController');
+
+
 Route::resource('cities','CityController');
 
 Route::resource('quarantines','QuarantineController');
@@ -49,5 +62,6 @@ Route::resource('quarantines','QuarantineController');
 Route::resource('positives','PositiveController');
 
 Route::resource('actives','ActiveController');
+
 
 

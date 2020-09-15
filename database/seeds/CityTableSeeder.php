@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\City;
 
 class CityTableSeeder extends Seeder
 {
@@ -11,6 +12,7 @@ class CityTableSeeder extends Seeder
      */
     public function run()
     {
+
         //
        
     	factory(App\City::class,2)->create()->each(
@@ -38,5 +40,9 @@ class CityTableSeeder extends Seeder
                 $city->actives()->saveMany($actives);
                 // relationship in category model
             });
+
+
+            factory(App\City::class,2)->create();
+
     }
 }

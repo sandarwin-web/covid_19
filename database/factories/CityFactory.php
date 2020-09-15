@@ -11,9 +11,14 @@ use App\Active;
 
 $factory->define(City::class, function (Faker $faker) {
     return [
+
         //
 
         'name'=>$faker->sentence($nbWords=3)
+
+        
+           // 'name'=>$faker->sentence($nbWords=3)
+
     ];
 });
 
