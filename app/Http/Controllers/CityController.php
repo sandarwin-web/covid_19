@@ -15,7 +15,9 @@ class CityController extends Controller
     public function index()
     {
         $cities=City::all();
-        // dd($cities);
+
+       // dd($cities);
+
         return view('backend.city.index',compact('cities'));
     }
 

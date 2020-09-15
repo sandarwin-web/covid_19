@@ -15,14 +15,28 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 Route::resource('cities','CityController');
 Route::resource('helpservices','HelpserviceController');
 Route::resource('recovereds','RecoveredController');
 Route::resource('comfirmeds','ComfirmedController');
+Route::resource('deceaseds','DeceasedController');
+Route::resource('testeds','TestedController');
 
 
+
+
+
+
+//Route::resource('students','StudentController');
+
+//Route::resource('actives','ActiveController');
+
+
+//wyne
+// Route::resource('cities','CityController');
 
 
 
