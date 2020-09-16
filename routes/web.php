@@ -13,35 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
 
-
-//     return 'by Khin Sapal';
-
-// });
-
-
-
-
-
-//Route::resource('students','StudentController');
-
-//Route::resource('actives','ActiveController');
-
-
-Route::get('dashboard', 'BackendController@dashboardfun'
-)->name('dashboardpage');//wyne
-// Route::resource('cities','CityController');
-
-Route::resource('deceaseds','DeceasedController');
-Route::resource('testeds','TestedController');
 
 
 
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 
-
 Route::resource('cities','CityController');
+
+Route::resource('helpservices','HelpserviceController');
+
+Route::resource('recovereds','RecoveredController');
+
+Route::resource('comfirmeds','ComfirmedController');
+
+Route::resource('deceaseds','DeceasedController');
+
+Route::resource('testeds','TestedController');
+
 
 
