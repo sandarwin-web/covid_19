@@ -34,7 +34,7 @@ $factory->define(City::class, function (Faker $faker) {
            'contact' =>$faker->sentence($nbWords =3)
     ];
 });
-<<<<<<< HEAD
+
 
 $factory->define(Quarantine::class,function (Faker $faker)
 {
@@ -47,31 +47,28 @@ $factory->define(Quarantine::class,function (Faker $faker)
 
 
 
-$factory->define(Positive::class,function (Faker $faker)
-{
-	return [
+// $factory->define(Positive::class,function (Faker $faker)
+// {
+// 	return [
 
-		'age'=>$faker->age,
-		'gender'=>$faker->gender,
-		'address'=>$faker->address,
-		'date'=>$faker->date
+// 		'age'=>$faker->age,
+// 		'gender'=>$faker->gender,
+// 		'address'=>$faker->address,
+// 		'date'=>$faker->date
 
 		// 'age'=>$faker->sentence($nbWords=3),
 		// 'gender'=>$faker->sentence($nbWords=3),
 		// 'address'=>$faker->sentence($nbWords=3),
 		// 'date'=>$faker->sentence($nbWords=3)
-	];
-});
+// 	];
+// });
 
 
-$factory->define(Active::class,function (Faker $faker)
-{
-	return [
-		// 'qty'=>$faker->qty,
-		'date'=>$faker->date,
-		'qty'=>$faker->qty
-	];
-});
-=======
-   
->>>>>>> 81c14407ce1a4da6c29c084b9339548c1522f122
+// $factory->define(Active::class,function (Faker $faker)
+// {
+// 	return [
+// 		// 'qty'=>$faker->qty,
+// 		'date'=>$faker->date,
+// 		'qty'=>$faker->qty
+// 	];
+// });

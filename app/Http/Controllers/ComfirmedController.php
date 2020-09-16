@@ -57,7 +57,7 @@ class ComfirmedController extends Controller
         // $brand->photo= $path;
         $comfirmed->save();
         //redirect
-        return redirect()->route('recovereds.index');
+        return redirect()->route('comfirmeds.index');
     }
 
     /**
