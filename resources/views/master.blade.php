@@ -66,27 +66,31 @@
 						<nav class="corona_menu">
 							<ul class="nav_scroll">
 								<li><a href="{{ route('mainpage') }}"> Home</a>
-									<ul class="sub-menu">
+									{{-- <ul class="sub-menu">
 										<li><a href="index.html">Home One</a></li>
 										<li><a href="index-2.html">Home Two</a></li>
 										<li><a href="index-3.html">Landing Page</a></li>
-									</ul>
+									</ul> --}}
 								</li>
 								<li><a href="{{ route('aboutpage') }}"> About</a></li>
 								<li><a href="{{ route('peventionpage') }}"> Prevention</a></li>
-								<li><a href="#page"> Pages</a>
+
+								<li><a href="#page"> Health Service</a>
 									<ul class="sub-menu">
+
+								<li><a href="#page"> Pages</a>
+									{{-- <ul class="sub-menu">
 										<li><a href="about.html">About</a></li>
 										<li><a href="team.html">Team Member</a></li>
 										<li><a href="team-details.html">Team Details</a></li>
 										<li><a href="faq.html">FAQ</a></li>
 										<li><a href="contact.html">Contact</a></li>
-									</ul>
+									</ul> --}}
 								</li>
 								<li><a href="news">News </a>
 									<ul class="sub-menu">
-										<li><a href="blog.html">Blog Grid</a></li>
-										<li><a href="blog-details.html">Blog Details</a></li>
+										{{-- <li><a href="blog.html">Blog Grid</a></li> --}}
+										<li><a href="{{ route('detailpage') }}">Details</a></li>
 									</ul>
 								</li>
 								<li><a href="{{ route('contactpage') }}">Contact</a></li>
@@ -115,10 +119,10 @@
 	<div class="footer_area bg_color pt-80 pb-120">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
+				{{-- <div class="col-lg-3 col-md-6">
 					<div class="single_footer">
 						<div class="single_footer_title pb-2">
-							<img src="{{ asset('front/images/1.png')}}" alt="" />
+							<img src="{{ asset('front/images/logo.png')}}" alt="" />
 						</div>
 						<div class="single_footer_text">
 							<p>The point of using Lorem Ipsum is that it has a more-or-less normal distrition of letters, as opposed to using </p>
@@ -130,64 +134,56 @@
 							<a href="#"><i class="fa fa-instagram"></i></a>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 				<div class="col-lg-3 col-md-6">
 					<div class="single_footer">
 						<div class="single_footer_title pb-4">
-							<h4>Important Links</h4>
+							<h4>Related UN Organizations And NGOs</h4>
 						</div>
 						<div class="single_footer_body">
 							<ul>
-								<li><a href="#">App Development</a></li>
-								<li><a href="#">App Marketing</a></li>
-								<li><a href="#">IOS Development</a></li>
-								<li><a href="#">Android Development</a></li>
-							</ul>
+                            <li><a href="http://www.who.int/country/mmr/en" target="_blank">WHO</a></li>
+                            <li><a href="http://www.unaids.org/en/regionscountries/countries/myanmar" target="_blank">UNAIDS</a></li>
+                            <li><a href="http://myanmar.unfpa.org/" target="_blank">UNFPA</a></li>
+                            <li><a href="http://www.mm.undp.org/">UNDP</a></li>
+                            <li><a href="http://www.unicef.org/myanmar">UNICEF</a></li>
+                            <li><a href="http://www.mmcwa-myanmar.org/" target="_blank">Myanmar Maternal and Child Welfare Association</a></li>
+                            <li><a href="http://www.mmacentral.org/" target="_blank">Myanmar Medical Association</a></li>
+                        </ul>
+
+
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single_footer">
-						<div class="single_footer_title pb-4">
-							<h4>Recent Update</h4>
-						</div>
-						<div class="single_footer_recent">
-							<div class="single_footer_recent_thumb">
-								<img src="{{ asset('front/images/1.png')}}" alt="" />
-							</div>
-							<div class="single_footer_recent_content">
-								<a href="#">Caring for someone at home</a>
-								<span>April 11. 2020</span>
-							</div>
-						</div>
-						<div class="single_footer_recent mt-3">
-							<div class="single_footer_recent_thumb">
-								<img src="{{ asset('front/images/3.png')}}" alt="" />
-							</div>
-							<div class="single_footer_recent_content">
-								<a href="#">What to Do if You are feeling</a>
-								<span>April 23. 2020</span>
-							</div>
-						</div>
-						
-					</div>
+				{{-- div class="col-lg-3 col-md-6"> --}}
+					<div class="col-xs-12 col-sm-12 col-md-4  hidden-xs hidden-sm">
+                    <div class="footer-logo footertop-menu">
+
+                        <h5 style="font-family: Myanmar3;"></i> ဝန်ကြီးဌာနများ၏ Website များ</h5><br>
+                        <ul>
+                            <li><a href="http://www.president-office.gov.mm/" target="_blank">President Office</a></li>
+                            <li><a href="http://www.mofa.gov.mm/" target="_blank">Ministry of Foreign Affairs</a></li>
+                            <li><a href="http://www.myanmarmoha.org/index.php?lang=en" target="_blank">Ministry of Home Affairs</a></li>
+                            <li><a href="http://www.mod.gov.mm/">Ministry of Defense</a></li>
+                            <li><a href="http://www.mba.gov.mm/">Ministry of Border Affairs</a></li>
+                            <li><a href="http://www.statecounsellor.gov.mm/" target="_blank">Myanmar State Counsellor Office</a></li>
+                            <li><a href="http://www.mohs.gov.mm/Main/content/page/other-ministry-web-sites" target="_blank">Other Ministry Websites</a></li>
+                        </ul>
+                    </div>
+               {{--  </div> --}}
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single_footer">
-						<div class="single_footer_title pb-4">
-							<h4>Social Media</h4>
-						</div>
-						<div class="single_footer_text">
-							<p>Lorem ipsum dolor sit amet, consetur acing .</p>
-						</div>
-						<div class="single_footer_address">
-							<ul>
-								<li><span>Address:</span> 20/10 Panthapath, Dhaka.</li>
-								<li><span>Telephone:</span> +323 254 123</li>
-								<li><span>Email:</span> example@gmail.com</li>
-							</ul>
-						</div>
-					</div>
+				{{-- <div class="col-lg-3 col-md-6"> --}}
+					<div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="footer-logo footertop-menu fmenu4">
+                        <h5>CONTACT US</h5>
+                        <ul>
+                            <li><a href="#">Office No. 4, Nay Pyi Taw, Myanmar</a></li>
+                            <li><a href="#">+95 67 3431071</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="#"> mailto:@CrystalCMS.Settings.ContactEmail></i>info@mohs.gov.mm</a></a></li>
+                        </ul>
+                    </div>
+                {{-- </div> --}}
 				</div>
 			</div>
 		</div>

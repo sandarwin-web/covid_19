@@ -1,17 +1,22 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Positive;
 use Illuminate\Http\Request;
 use App\Comfirmed;
+
 use App\Deceased;
 use App\Recovered;
+
+
+use App\City;
 
 class PageController extends Controller
 {
     //
     public function mainfun($value='')
     {
+
         
     	// $comfirmeds = Comfirmed::take(1)->orderBy('id','desc')->get();
     	
@@ -28,6 +33,11 @@ class PageController extends Controller
             // dd($comfirmeds);
              
         return view('main',compact('comfirmeds','deceaseds','recovereds'));
+
+       // $con = Comfirmed::confirmed('qty')
+       //  dd(count($con));
+    	return view('main');
+
     }
 
     
@@ -47,5 +57,18 @@ class PageController extends Controller
     {
     	# code...
     	return view('contact');
+    }
+
+    public function newsfun($value='')
+    {
+        # code...
+        $positives=Positive::all();
+        return view('news',compact('positives'));
+        // return view('news');
+    }
+     public function detailfun($value='')
+    {
+        # code...
+        return view('details');
     }
 }

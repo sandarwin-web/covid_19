@@ -29,9 +29,9 @@ $factory->define(City::class, function (Faker $faker) {
     return [
         'name' =>$faker->sentence($nbWords =3),
         'address' =>$faker->sentence($nbWords =3),
-         'time' =>$faker->sentence($nbWords =3),
-          'opening_day' =>$faker->sentence($nbWords =3),
-           'contact' =>$faker->sentence($nbWords =3)
+        'time' =>$faker->sentence($nbWords =3),
+        'opening_day' =>$faker->sentence($nbWords =3),
+        'contact' =>$faker->sentence($nbWords =3)
     ];
 });
 
@@ -60,6 +60,7 @@ $factory->define(Quarantine::class,function (Faker $faker)
 		// 'gender'=>$faker->sentence($nbWords=3),
 		// 'address'=>$faker->sentence($nbWords=3),
 		// 'date'=>$faker->sentence($nbWords=3)
+<<<<<<< HEAD
 // 	];
 // });
 
@@ -72,3 +73,23 @@ $factory->define(Quarantine::class,function (Faker $faker)
 // 		'qty'=>$faker->qty
 // 	];
 // });
+=======
+	];
+});
+
+
+$factory->define(Active::class,function (Faker $faker)
+{
+	return [
+		// 'qty'=>$faker->qty,
+		'date'=>$faker->date,
+		'qty'=>$faker->qty
+	];
+<<<<<<< HEAD
+});
+
+   
+=======
+});
+>>>>>>> e86132e4c12831e7adb170f1678218a205beba17
+>>>>>>> 2f043826881fb7425b8fc888cbd95b54a837e796

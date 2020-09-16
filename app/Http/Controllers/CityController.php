@@ -20,7 +20,6 @@ class CityController extends Controller
         // dd($cities);
         
 
-
        // dd($cities);
 
         return view('backend.city.index',compact('cities'));

@@ -3,7 +3,15 @@
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
 		
+<<<<<<< HEAD
 	<h1 class="h3 mb-0 text-gray-800">Actives List</h1><br>
+=======
+<<<<<<< HEAD
+	<h1 class="h3 mb-0 text-gray-800">Active List</h1><br>
+=======
+	<h1 class="h3 mb-0 text-gray-800">Active Lists</h1><br>
+>>>>>>> e86132e4c12831e7adb170f1678218a205beba17
+>>>>>>> 2f043826881fb7425b8fc888cbd95b54a837e796
 	<a href="{{route('actives.create')}}" class="btn btn-success">Add New</a>
 	</div>
 	<div class="row">
