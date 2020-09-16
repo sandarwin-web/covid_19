@@ -24,8 +24,24 @@ use Illuminate\Support\Facades\Route;
 
 
 
+//Route::resource('students','StudentController');
+
+//Route::resource('actives','ActiveController');
+
+
+Route::get('dashboard', 'BackendController@dashboardfun'
+)->name('dashboardpage');//wyne
+// Route::resource('cities','CityController');
+
+Route::resource('deceaseds','DeceasedController');
+Route::resource('testeds','TestedController');
+
+
 
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 
+
 Route::resource('cities','CityController');
+
+
