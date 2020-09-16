@@ -11,9 +11,26 @@ class city extends Model
     	'name',
     ];
 
+
+     public function quarantines($value='')
+    {
+    	return $this->hasMany('App\Quarantine');
+    }
+
+    public function positives($value='')
+    {
+    	return $this->hasMany('App\Positive');
+    }
+
+     public function actives($value='')
+    {
+        return $this->hasMany('App\Active');
+    }
+
      public function helpservices($value='')
     {
     	return $this->hasMany('App\Helpservice');
     }
+
 
 }

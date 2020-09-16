@@ -18,6 +18,37 @@ class CityTableSeeder extends Seeder
         factory(App\City::class,2)->create();
 =======
         //
+<<<<<<< HEAD
+       
+    	factory(App\City::class,2)->create()->each(
+    		function($city){
+    			// seed the relation with 3 subcategories
+    			$quarantines = factory(App\Quarantine::class,3)->make();
+    			$city->quarantines()->saveMany($quarantines);
+    			// relationship in category model
+    		});
+
+
+        factory(App\City::class,2)->create()->each(
+            function($city){
+                // seed the relation with 3 subcategories
+                $positives = factory(App\Positive::class,3)->make();
+                $city->positives()->saveMany($positives);
+                // relationship in category model
+            });
+
+
+        factory(App\City::class,2)->create()->each(
+            function($city){
+                // seed the relation with 3 subcategories
+                $actives = factory(App\Active::class,3)->make();
+                $city->actives()->saveMany($actives);
+                // relationship in category model
+            });
+
+
+            factory(App\City::class,2)->create();
+=======
         factory(App\City::class,3)->create()->each(
             function($city){
                 //seed the relation with 3 subcategoriese
@@ -28,6 +59,7 @@ class CityTableSeeder extends Seeder
 
 
         factory(App\City::class,2)->create();
+>>>>>>> 81c14407ce1a4da6c29c084b9339548c1522f122
 
 
 >>>>>>> 81c14407ce1a4da6c29c084b9339548c1522f122

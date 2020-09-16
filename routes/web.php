@@ -17,20 +17,36 @@ use Illuminate\Support\Facades\Route;
 
 
 
+
+Route::get('/', 'PageController@mainfun'
+)->name('mainpage');
+
+Route::get('about', 'PageController@aboutfun'
+)->name('aboutpage');
+
+Route::get('prevention', 'PageController@preventionfun'
+)->name('peventionpage');
+
+Route::get('news', 'PageController@newsfun'
+)->name('newspage');
+
+Route::get('contact', 'PageController@contactfun'
+)->name('contactpage');
+
+
+
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
-
 Route::resource('cities','CityController');
-
 Route::resource('helpservices','HelpserviceController');
-
 Route::resource('recovereds','RecoveredController');
-
 Route::resource('comfirmeds','ComfirmedController');
-
 Route::resource('deceaseds','DeceasedController');
-
 Route::resource('testeds','TestedController');
+//sdw
+Route::resource('quarantines','QuarantineController');
+Route::resource('positives','PositiveController');
+Route::resource('actives','ActiveController');
 
 
 
