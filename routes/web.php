@@ -13,20 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
 
 
-    return 'by Khin Sapal';
+//     return 'by Khin Sapal';
 
-});
+// });
 
-Route::get('/testing',function ($value='')
-{
-	return 'This is testing page!';
-});
+
+
+
+
 
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 
-
-
+Route::resource('cities','CityController');
