@@ -20,10 +20,6 @@
 					<span class="text-danger">{{$errors->first('gender')}}</span>
 				</div>
 			</div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 2f043826881fb7425b8fc888cbd95b54a837e796
 
 			<div class="form-group row">
 				<label  class="col-sm-2 col-form-label">Address</label>

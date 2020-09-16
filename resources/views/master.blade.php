@@ -45,181 +45,170 @@
         <![endif]-->
 
 
-	<!-- ============================================================== -->
-	<!-- Start - corona Main Menu Area -->
-	<!-- ============================================================== -->
-	<div id="sticky-header" class="corona_main_menu d-md-none d-lg-block d-sm-none d-none">
-		<div class="corona_nav_manu">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-3">
-						<div class="logo">
-							<a class="logo_img" href="index.html" title="corona">
-								<img src="{{ asset('front/images/logo.png')}}" alt="" />
-							</a>
-							<a class="logo_tranalte" href="index.html" title="corona">
-								<img src="{{ asset('front/images/logo1.png')}}" alt="" />
-							</a>
-						</div>
-					</div>
-					<div class="col-md-9">
-						<nav class="corona_menu">
-							<ul class="nav_scroll">
-								<li><a href="{{ route('mainpage') }}"> Home</a>
-								</li>
-								<li><a href="{{ route('aboutpage') }}"> About</a></li>
-								<li><a href="{{ route('peventionpage') }}"> Prevention</a></li>
+        <!-- ============================================================== -->
+        <!-- Start - corona Main Menu Area -->
+        <!-- ============================================================== -->
+        <div id="sticky-header" class="corona_main_menu d-md-none d-lg-block d-sm-none d-none">
+        	<div class="corona_nav_manu">
+        		<div class="container-fluid">
+        			<div class="row">
+        				<div class="col-md-3">
+        					<div class="logo">
+        						<a class="logo_img" href="index.html" title="corona">
+        							<img src="{{ asset('front/images/logo.png')}}" alt="" />
+        						</a>
+        						<a class="logo_tranalte" href="index.html" title="corona">
+        							<img src="{{ asset('front/images/logo1.png')}}" alt="" />
+        						</a>
+        					</div>
+        				</div>
+        				<div class="col-md-9">
+        					<nav class="corona_menu">
+        						<ul class="nav_scroll">
+        							<li><a href="{{ route('mainpage') }}"> Home</a>
+        							</li>
+        							<li><a href="{{ route('aboutpage') }}"> About</a></li>
+        							<li><a href="{{ route('peventionpage') }}"> Prevention</a></li>
 
-								<li><a href="#page"> Health Service</a>
+        							<li><a href="#page"> Health Service</a>
 
-								<li><a href="news">News</a>
-								</li>
-								<li><a href="{{ route('contactpage') }}">Contact</a></li>
-							</ul>			
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- ============================================================== -->
-	<!-- End - corona Main Menu Area -->
-	<!-- ============================================================== -->
-	
-
-	@yield('content')
+        								<li><a href="news">News</a>
+        								</li>
+        								<li><a href="{{ route('contactpage') }}">Contact</a></li>
+        							</ul>			
+        						</nav>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<!-- ============================================================== -->
+        	<!-- End - corona Main Menu Area -->
+        	<!-- ============================================================== -->
 
 
-	
-	<!-- ============================================================== -->
-	<!-- Start - corona Footer Area -->
-	<!-- ============================================================== -->
-	<div class="footer_area bg_color pt-80 pb-120">
-		<div class="container">
-			<div class="row">
-				{{-- <div class="col-lg-3 col-md-6">
-					<div class="single_footer">
-						<div class="single_footer_title pb-2">
-							<img src="{{ asset('front/images/logo.png')}}" alt="" />
-						</div>
-						<div class="single_footer_text">
-							<p>The point of using Lorem Ipsum is that it has a more-or-less normal distrition of letters, as opposed to using </p>
-						</div>
-						<div class="footer_icon pt-2">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-						</div>
-					</div>
-				</div> --}}
-				<div class="col-lg-3 col-md-6">
-					<div class="single_footer">
-						<div class="single_footer_title pb-4">
-							<h4>Related UN Organizations And NGOs</h4>
-						</div>
-						<div class="single_footer_body">
-							<ul>
-                            <li><a href="http://www.who.int/country/mmr/en" target="_blank">WHO</a></li>
-                            <li><a href="http://www.unaids.org/en/regionscountries/countries/myanmar" target="_blank">UNAIDS</a></li>
-                            <li><a href="http://myanmar.unfpa.org/" target="_blank">UNFPA</a></li>
-                            <li><a href="http://www.mm.undp.org/">UNDP</a></li>
-                            <li><a href="http://www.unicef.org/myanmar">UNICEF</a></li>
-                            <li><a href="http://www.mmcwa-myanmar.org/" target="_blank">Myanmar Maternal and Child Welfare Association</a></li>
-                            <li><a href="http://www.mmacentral.org/" target="_blank">Myanmar Medical Association</a></li>
-                        </ul>
+        	@yield('content')
 
 
-						</div>
-					</div>
-				</div>
-				{{-- div class="col-lg-3 col-md-6"> --}}
-					<div class="col-xs-12 col-sm-12 col-md-4  hidden-xs hidden-sm">
-                    <div class="footer-logo footertop-menu">
 
-                        <h5 style="font-family: Myanmar3;"></i> ဝန်ကြီးဌာနများ၏ Website များ</h5><br>
-                        <ul>
-                            <li><a href="http://www.president-office.gov.mm/" target="_blank">President Office</a></li>
-                            <li><a href="http://www.mofa.gov.mm/" target="_blank">Ministry of Foreign Affairs</a></li>
-                            <li><a href="http://www.myanmarmoha.org/index.php?lang=en" target="_blank">Ministry of Home Affairs</a></li>
-                            <li><a href="http://www.mod.gov.mm/">Ministry of Defense</a></li>
-                            <li><a href="http://www.mba.gov.mm/">Ministry of Border Affairs</a></li>
-                            <li><a href="http://www.statecounsellor.gov.mm/" target="_blank">Myanmar State Counsellor Office</a></li>
-                            <li><a href="http://www.mohs.gov.mm/Main/content/page/other-ministry-web-sites" target="_blank">Other Ministry Websites</a></li>
-                        </ul>
-                    </div>
-               {{--  </div> --}}
-				</div>
-				{{-- <div class="col-lg-3 col-md-6"> --}}
-					<div class="col-xs-12 col-sm-12 col-md-4">
-                    <div class="footer-logo footertop-menu fmenu4">
-                        <h5>CONTACT US</h5>
-                        <ul>
-                            <li><a href="#">Office No. 4, Nay Pyi Taw, Myanmar</a></li>
-                            <li><a href="#">+95 67 3431071</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="#"> mailto:@CrystalCMS.Settings.ContactEmail></i>info@mohs.gov.mm</a></a></li>
-                        </ul>
-                    </div>
-                {{-- </div> --}}
-				</div>
-			</div>
-		</div>
-		<!-- Footer Shape Image -->
-		<div class="footer_shape">
-			<div class="clouds">
-				<img src="{{ asset('front/images/boy1.png')}}" alt="01" class="cloud1"/>
-			</div>
-		</div>
-		<div class="footer_shape">
-			<div class="clouds">
-				<img src="{{ asset('front/images/boy2.png')}}" alt="02" class="cloud2"/>
-			</div>
-		</div>
-		
-		<div class="footer_shape">
-			<div class="clouds">
-				<img src="{{ asset('front/images/boy3.png')}}" alt="03" class="cloud3"/>
-			</div>
-		</div>
-		<div class="footer_shape">
-			<div class="clouds">
-				<img src="{{ asset('front/images/boy4.png')}}" alt="04" class="cloud4"/>
-			</div>
-		</div>
-	</div>
-	
-	<!-- jquery js -->	
-	<script type="text/javascript" src="{{ asset('front/js/vendor/jquery-3.2.1.min.js')}}"></script>
-	<!-- bootstrap js -->	
-	<script type="text/javascript" src="{{ asset('front/js/bootstrap.min.js')}}"></script>
-	<!-- carousel js -->
-	<script type="text/javascript" src="{{ asset('front/js/owl.carousel.min.js')}}"></script>
-	<!-- counterup js -->
-	<script type="text/javascript" src="{{ asset('front/js/jquery.counterup.min.js')}}"></script>
-	<!-- waypoints js -->
-	<script type="text/javascript" src="{{ asset('front/js/waypoints.min.js')}}"></script>
-	<script type="text/javascript" src="{{ asset('front/js/jquery.counterup.min.js')}}"></script>
-	<!-- imagesloaded js -->
-	<script type="text/javascript" src="{{ asset('front/js/imagesloaded.pkgd.min.js')}}"></script>
-	<!-- isotope js -->
-	<script type="text/javascript" src="{{ asset('front/js/isotope.pkgd.min.js')}}"></script>
-	<!-- animated js -->
-	<script type="text/javascript" src="{{ asset('front/js/animated-text.js')}}"></script>
-	<!-- venobox js -->
-	<script type="text/javascript" src="venobox/venobox.js"></script>
-	<!-- venobox min js -->
-	<script type="text/javascript" src="venobox/venobox.min.js"></script>
-	<!-- jquery js -->
-	<script type="text/javascript" src="{{ asset('front/js/jquery.meanmenu.js')}}"></script>
-	<script type="text/javascript" src="{{ asset('front/js/jquery.nav.js')}}"></script>
-	<script type="text/javascript" src="{{ asset('front/js/jquery.scrollUp.js')}}"></script>
-	<script type="text/javascript" src="{{ asset('front/js/contact-form-script.js')}}"></script>
+        	<!-- ============================================================== -->
+        	<!-- Start - corona Footer Area -->
+        	<!-- ============================================================== -->
+        	<div class="footer_area bg_color pt-80 pb-120">
+        		<div class="container">
+        			<div class="row">
+        				<div class="col-lg-4 col-md-6">
+        					<div class="single_footer">
+        						<div class="single_footer_title pb-4">
+        							<h4>Related UN Organizations And NGOs</h4>
+        						</div>
+        						<div class="single_footer_body">
+        							<ul>
+        								<li><a href="http://www.who.int/country/mmr/en" target="_blank">WHO</a></li>
+        								<li><a href="http://www.unaids.org/en/regionscountries/countries/myanmar" target="_blank">UNAIDS</a></li>
+        								<li><a href="http://myanmar.unfpa.org/" target="_blank">UNFPA</a></li>
+        								<li><a href="http://www.mm.undp.org/">UNDP</a></li>
+        								<li><a href="http://www.unicef.org/myanmar">UNICEF</a></li>
+        								<li><a href="http://www.mmcwa-myanmar.org/" target="_blank">Myanmar Maternal and Child Welfare Association</a></li>
+        								<li><a href="http://www.mmacentral.org/" target="_blank">Myanmar Medical Association</a></li>
+        							</ul>
+        						</div>
+        					</div>
+        				</div>
 
-	{{-- <script type="text/javascript" src="{{ asset('front/js/form-validator.min.js')}}"></script> --}}
-	<!-- theme js -->	
-	<script src="{{ asset('front/jquery.form-validator.min.js')}}" integrity="sha512-7+hQkXGIswtBWoGbyajZqqrC8sa3OYW+gJw5FzW/XzU/lq6kScphPSlj4AyJb91MjPkQc+mPQ3bZ90c/dcUO5w==" crossorigin="anonymous"></script>
+        				<div class="col-lg-4 col-md-6">
+        					<div class="single_footer">
+        						<div class="single_footer_title pb-4">
+        							<h4>Related UN Organizations And NGOs</h4>
+        						</div>
+        						<div class="single_footer_body">
+        							<ul>
+        								<li><a href="http://www.president-office.gov.mm/" target="_blank">President Office</a></li>
+        								<li><a href="http://www.mofa.gov.mm/" target="_blank">Ministry of Foreign Affairs</a></li>
+        								<li><a href="http://www.myanmarmoha.org/index.php?lang=en" target="_blank">Ministry of Home Affairs</a></li>
+        								<li><a href="http://www.mod.gov.mm/">Ministry of Defense</a></li>
+        								<li><a href="http://www.mba.gov.mm/">Ministry of Border Affairs</a></li>
+        								<li><a href="http://www.statecounsellor.gov.mm/" target="_blank">Myanmar State Counsellor Office</a></li>
+        								<li><a href="http://www.mohs.gov.mm/Main/content/page/other-ministry-web-sites" target="_blank">Other Ministry Websites</a></li>
+        							</ul>
+        						</div>
+        					</div>
+        				</div>
 
-	<script type="text/javascript" src="{{ asset('front/js/theme.js')}}"></script>
-</body>
-</html>
+        				<div class="col-lg-4 col-md-6">
+        					<div class="single_footer">
+        						<div class="single_footer_title pb-4">
+        							<h4>Related UN Organizations And NGOs</h4>
+        						</div>
+        						<div class="single_footer_body">
+        							<ul>
+        							 <li><a href="#">Office No. 4, Nay Pyi Taw, Myanmar</a></li>
+        						     <li><a href="#">+95 67 3431071</a></li>
+        						     <li><a href="/contact">Contact Us</a></li>
+        						     <li><a href="#"> mailto:@CrystalCMS.Settings.ContactEmail></i>info@mohs.gov.mm</a></a></li>
+        							</ul>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+
+        		</div>
+        	</div>
+        	<!-- Footer Shape Image -->
+        	<div class="footer_shape">
+        		<div class="clouds">
+        			<img src="{{ asset('front/images/boy1.png')}}" alt="01" class="cloud1"/>
+        		</div>
+        	</div>
+        	<div class="footer_shape">
+        		<div class="clouds">
+        			<img src="{{ asset('front/images/boy2.png')}}" alt="02" class="cloud2"/>
+        		</div>
+        	</div>
+
+        	<div class="footer_shape">
+        		<div class="clouds">
+        			<img src="{{ asset('front/images/boy3.png')}}" alt="03" class="cloud3"/>
+        		</div>
+        	</div>
+        	<div class="footer_shape">
+        		<div class="clouds">
+        			<img src="{{ asset('front/images/boy4.png')}}" alt="04" class="cloud4"/>
+        		</div>
+        	</div>
+        </div>
+
+        <!-- jquery js -->	
+        <script type="text/javascript" src="{{ asset('front/js/vendor/jquery-3.2.1.min.js')}}"></script>
+        <!-- bootstrap js -->	
+        <script type="text/javascript" src="{{ asset('front/js/bootstrap.min.js')}}"></script>
+        <!-- carousel js -->
+        <script type="text/javascript" src="{{ asset('front/js/owl.carousel.min.js')}}"></script>
+        <!-- counterup js -->
+        <script type="text/javascript" src="{{ asset('front/js/jquery.counterup.min.js')}}"></script>
+        <!-- waypoints js -->
+        <script type="text/javascript" src="{{ asset('front/js/waypoints.min.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('front/js/jquery.counterup.min.js')}}"></script>
+        <!-- imagesloaded js -->
+        <script type="text/javascript" src="{{ asset('front/js/imagesloaded.pkgd.min.js')}}"></script>
+        <!-- isotope js -->
+        <script type="text/javascript" src="{{ asset('front/js/isotope.pkgd.min.js')}}"></script>
+        <!-- animated js -->
+        <script type="text/javascript" src="{{ asset('front/js/animated-text.js')}}"></script>
+        <!-- venobox js -->
+        <script type="text/javascript" src="venobox/venobox.js"></script>
+        <!-- venobox min js -->
+        <script type="text/javascript" src="venobox/venobox.min.js"></script>
+        <!-- jquery js -->
+        <script type="text/javascript" src="{{ asset('front/js/jquery.meanmenu.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('front/js/jquery.nav.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('front/js/jquery.scrollUp.js')}}"></script>
+        <script type="text/javascript" src="{{ asset('front/js/contact-form-script.js')}}"></script>
+
+        {{-- <script type="text/javascript" src="{{ asset('front/js/form-validator.min.js')}}"></script> --}}
+        <!-- theme js -->	
+        <script src="{{ asset('front/jquery.form-validator.min.js')}}" integrity="sha512-7+hQkXGIswtBWoGbyajZqqrC8sa3OYW+gJw5FzW/XzU/lq6kScphPSlj4AyJb91MjPkQc+mPQ3bZ90c/dcUO5w==" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="{{ asset('front/js/theme.js')}}"></script>
+    </body>
+    </html>

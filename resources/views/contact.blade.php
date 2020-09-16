@@ -1,6 +1,12 @@
 
 @extends('master')
 @section('content')
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 {{-- 
 <div class="breatcome_area d-flex align-items-center">
 	<div class="container">
@@ -60,12 +66,12 @@
 							<tbody>
 								@foreach ($helpservices as $helpservice)
 								<tr>
-										<th>{{ $helpservice->id }}</th>
-										<th>{{ $helpservice->name }}</th>
-										<th>{{ $helpservice->address}}</th>
-										<th>{{ $helpservice->time }}</th>
-										<th>{{ $helpservice->opening_day }}</th>
-										<th>{{ $helpservice->contact}}</th>
+									<th>{{ $helpservice->id }}</th>
+									<th>{{ $helpservice->name }}</th>
+									<th>{{ $helpservice->address}}</th>
+									<th>{{ $helpservice->time }}</th>
+									<th>{{ $helpservice->opening_day }}</th>
+									<th>{{ $helpservice->contact}}</th>
 
 								</tr>
 								@endforeach
@@ -73,60 +79,68 @@
 						</table>
 
 
-	
-	<!-- ============================================================== -->
-	<!-- Start - Corona Contact Now Area -->
-	<!-- ============================================================== -->
-	<div class="contact_now_area bg_color2 pt-80 pb-70">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section_title center color_black mb-5">
-						<div class="section_title_thumb rotateme">
-							<img src="{{ asset('front/images/lg.png')}}" alt="" />
-						</div>
-						<div class="section_title_content pt-2">
-							<h2>Contact Now</h2>
-							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-<div class="contact_now_area bg_color2 pt-80 pb-70">
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				<div class="single_contact_now">
-					<div class="single_contact_now_inner">
-						<div class="single_contact_now_content">
-							<img src="front/images/helpservice.jpg" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				<div class="single_contact_now">
-					<div class="single_contact_now_inner">
-						<div class="single_contact_now_content">
-							<img src="front/images/helpservice3.jpg" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				<div class="single_contact_now">
-					<div class="single_contact_now_inner">
-						<div class="single_contact_now_content">
-							<img src="front/images/helpservice2.jpg" alt="" />
-						</div>
-					</div>
-				</div>
-			</div>
+						<!-- ============================================================== -->
+						<!-- Start - Corona Contact Now Area -->
+						<!-- ============================================================== -->
+						<div class="contact_now_area bg_color2 pt-80 pb-70">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="section_title center color_black mb-5">
+											<div class="section_title_thumb rotateme">
+												<img src="{{ asset('front/images/lg.png')}}" alt="" />
+											</div>
+											<div class="section_title_content pt-2">
+												<h2>Contact Now</h2>
+												<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 
+							<div class="contact_now_area bg_color2 pt-80 pb-70">
+								<div class="container">
+
+									<div class="row">
+										<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+											<div class="single_contact_now">
+												<div class="single_contact_now_inner">
+													<div class="single_contact_now_content">
+														<img src="front/images/helpservice.jpg" alt="" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+											<div class="single_contact_now">
+												<div class="single_contact_now_inner">
+													<div class="single_contact_now_content">
+														<img src="front/images/helpservice3.jpg" alt="" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+											<div class="single_contact_now">
+												<div class="single_contact_now_inner">
+													<div class="single_contact_now_content">
+														<img src="front/images/helpservice2.jpg" alt="" />
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>	
 		</div>
 	</div>
-</div>
+</div>	
+
 @endsection
