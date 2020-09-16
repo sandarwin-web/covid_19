@@ -33,6 +33,12 @@ Route::get('news', 'PageController@newsfun'
 Route::get('contact', 'PageController@contactfun'
 )->name('contactpage');
 
+Route::get('news', 'PageController@newsfun'
+)->name('newspage');
+
+Route::get('details', 'PageController@detailfun'
+)->name('detailpage');
+
 
 
 Route::get('dashboard', 'BackendController@dashboardfun'

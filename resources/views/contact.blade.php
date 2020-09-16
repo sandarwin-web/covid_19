@@ -44,7 +44,7 @@
 						<img src="assets/images/lg.png" alt="" />
 					</div>
 					<div class="section_title_content pt-2">
-						<h2 class="bg-info">Health Service</h2><br>
+						<h1>Health Service</h1><br>
 
 						<table class="table table-hover">
 							<thead class="bg-info">
@@ -72,6 +72,23 @@
 							</tbody>
 						</table>
 
+
+	
+	<!-- ============================================================== -->
+	<!-- Start - Corona Contact Now Area -->
+	<!-- ============================================================== -->
+	<div class="contact_now_area bg_color2 pt-80 pb-70">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section_title center color_black mb-5">
+						<div class="section_title_thumb rotateme">
+							<img src="{{ asset('front/images/lg.png')}}" alt="" />
+						</div>
+						<div class="section_title_content pt-2">
+							<h2>Contact Now</h2>
+							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -112,37 +129,4 @@
 		</div>
 	</div>
 </div>
-
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				{{-- <div class="contact-form-main">
-					<form id="contact-form" action="mail.php" method="POST" >
-							<input type="text" name="name"  placeholder="Name">
-							<input type="email" name="email" placeholder="Email">
-							<input type="text" name="subject" placeholder="Subject">
-							<textarea name="message"  id="" cols="30" rows="10" placeholder="Message"></textarea>
-							<button type="submit">Send Message</button>
-					</form>
-					<p class="form-message"></p>
-				</div>
-				</div>
-				<div class="col-lg-6">
-					<!-- CONTACT_AREA END -->
-					<div class="google_map_area">
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<div class="google_map_area">
-									<iframe class="map" src="https://snazzymaps.com/embed/65241"></iframe>		
-								</div>
-							</div>				
-						</div>
-					</div>
-				</div> --}}
-			</div>
-		</div>
-	</div>
-	<!-- ============================================================== -->
-	<!-- Start - Corona Contact Area -->
-	<!-- =================
-
-	@endsection
+@endsection

@@ -62,4 +62,13 @@ $factory->define(Active::class,function (Faker $faker)
 		'date'=>$faker->date,
 		'qty'=>$faker->qty
 	];
+<<<<<<< HEAD
 });
+<<<<<<< HEAD
+=======
+
+   
+=======
+});
+>>>>>>> e86132e4c12831e7adb170f1678218a205beba17
+>>>>>>> 2f043826881fb7425b8fc888cbd95b54a837e796
