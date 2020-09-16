@@ -15,12 +15,7 @@ use App\Active;
 $factory->define(City::class, function (Faker $faker) {
     return [
 
-        //
-
         'name'=>$faker->sentence($nbWords=3)
-
-        
-           // 'name'=>$faker->sentence($nbWords=3)
 
     ];
     });
@@ -56,6 +51,7 @@ $factory->define(Quarantine::class,function (Faker $faker)
 // 		'address'=>$faker->address,
 // 		'date'=>$faker->date
 
+<<<<<<< HEAD
 		// 'age'=>$faker->sentence($nbWords=3),
 		// 'gender'=>$faker->sentence($nbWords=3),
 		// 'address'=>$faker->sentence($nbWords=3),
@@ -74,6 +70,8 @@ $factory->define(Quarantine::class,function (Faker $faker)
 // 	];
 // });
 =======
+=======
+>>>>>>> 585d8a961c70e0f35c1f5c70bb187942eb435ff0
 	];
 });
 
@@ -87,6 +85,8 @@ $factory->define(Active::class,function (Faker $faker)
 	];
 <<<<<<< HEAD
 });
+<<<<<<< HEAD
+=======
 
    
 =======

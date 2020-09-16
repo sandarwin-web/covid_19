@@ -13,6 +13,10 @@ class CityTableSeeder extends Seeder
     public function run()
     {
 
+<<<<<<< HEAD
+
+        factory(App\City::class,2)->create();
+=======
         //
 <<<<<<< HEAD
 
@@ -82,5 +86,6 @@ class CityTableSeeder extends Seeder
 >>>>>>> 2f043826881fb7425b8fc888cbd95b54a837e796
 
 
+>>>>>>> 81c14407ce1a4da6c29c084b9339548c1522f122
     }
 }

@@ -17,7 +17,7 @@ class HelpserviceController extends Controller
     {
          $helpservices=Helpservice::all();
 
-         // dd($helpservices);
+          //dd($helpservices);
           return view('backend.helpservice.index',compact('helpservices'));
         
         // return view('backend.city.index',compact('cities'));

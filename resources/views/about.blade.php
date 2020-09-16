@@ -4,6 +4,12 @@
 	<!-- Start - Corona About Area -->
 	<!-- ============================================================== -->
 	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<div class="about_area bg_color pb-60 pt-80">
 		<div class="container">
 			<div class="row">

@@ -66,38 +66,14 @@
 						<nav class="corona_menu">
 							<ul class="nav_scroll">
 								<li><a href="{{ route('mainpage') }}"> Home</a>
-									{{-- <ul class="sub-menu">
-										<li><a href="index.html">Home One</a></li>
-										<li><a href="index-2.html">Home Two</a></li>
-										<li><a href="index-3.html">Landing Page</a></li>
-									</ul> --}}
 								</li>
 								<li><a href="{{ route('aboutpage') }}"> About</a></li>
 								<li><a href="{{ route('peventionpage') }}"> Prevention</a></li>
 
-								<li><a href="#page"> Health Service</a>
-									<ul class="sub-menu">
-
-								<li><a href="#page"> Pages</a>
-									{{-- <ul class="sub-menu">
-										<li><a href="about.html">About</a></li>
-										<li><a href="team.html">Team Member</a></li>
-										<li><a href="team-details.html">Team Details</a></li>
-										<li><a href="faq.html">FAQ</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul> --}}
+								<li><a href="news">News</a>
 								</li>
-								<li><a href="news">News </a>
-									<ul class="sub-menu">
-										{{-- <li><a href="blog.html">Blog Grid</a></li> --}}
-										<li><a href="{{ route('detailpage') }}">Details</a></li>
-									</ul>
-								</li>
-								<li><a href="{{ route('contactpage') }}">Contact</a></li>
-							</ul>
-							{{-- <div class="corona_button ml-5">
-								<a href="#">Donate Now</a>
-							</div> --}}				
+								<li><a href="{{ route('contactpage') }}">Health Service</a></li>
+							</ul>			
 						</nav>
 					</div>
 				</div>

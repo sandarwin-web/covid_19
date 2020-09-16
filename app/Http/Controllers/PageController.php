@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use App\Positive;
 use Illuminate\Http\Request;
+
+use App\Helpservice;
+
 use App\Comfirmed;
 
 use App\Deceased;
@@ -52,11 +55,15 @@ class PageController extends Controller
     	# code...
     	return view('prevention');
     }
+    
 
     public function contactfun($value='')
     {
     	# code...
-    	return view('contact');
+        $helpservices = Helpservice::All();
+        //dd($helpservice);
+        return view('contact',compact('helpservices'));
+    	//return view('contact');
     }
 
     public function newsfun($value='')

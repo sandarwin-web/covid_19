@@ -18,15 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
-//Route::resource('students','StudentController');
-
-//Route::resource('actives','ActiveController');
-
-//wyne
-// Route::resource('cities','CityController');
-
-
 Route::get('/', 'PageController@mainfun'
 )->name('mainpage');
 
@@ -35,6 +26,9 @@ Route::get('about', 'PageController@aboutfun'
 
 Route::get('prevention', 'PageController@preventionfun'
 )->name('peventionpage');
+
+Route::get('news', 'PageController@newsfun'
+)->name('newspage');
 
 Route::get('contact', 'PageController@contactfun'
 )->name('contactpage');
