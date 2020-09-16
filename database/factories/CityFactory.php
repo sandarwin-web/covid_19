@@ -29,9 +29,9 @@ $factory->define(City::class, function (Faker $faker) {
     return [
         'name' =>$faker->sentence($nbWords =3),
         'address' =>$faker->sentence($nbWords =3),
-         'time' =>$faker->sentence($nbWords =3),
-          'opening_day' =>$faker->sentence($nbWords =3),
-           'contact' =>$faker->sentence($nbWords =3)
+        'time' =>$faker->sentence($nbWords =3),
+        'opening_day' =>$faker->sentence($nbWords =3),
+        'contact' =>$faker->sentence($nbWords =3)
     ];
 });
 
@@ -71,6 +71,10 @@ $factory->define(Active::class,function (Faker $faker)
 		'date'=>$faker->date,
 		'qty'=>$faker->qty
 	];
+<<<<<<< HEAD
 });
 
    
+=======
+});
+>>>>>>> e86132e4c12831e7adb170f1678218a205beba17

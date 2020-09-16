@@ -66,27 +66,31 @@
 						<nav class="corona_menu">
 							<ul class="nav_scroll">
 								<li><a href="{{ route('mainpage') }}"> Home</a>
-									<ul class="sub-menu">
+									{{-- <ul class="sub-menu">
 										<li><a href="index.html">Home One</a></li>
 										<li><a href="index-2.html">Home Two</a></li>
 										<li><a href="index-3.html">Landing Page</a></li>
-									</ul>
+									</ul> --}}
 								</li>
 								<li><a href="{{ route('aboutpage') }}"> About</a></li>
 								<li><a href="{{ route('peventionpage') }}"> Prevention</a></li>
+
 								<li><a href="#page"> Health Service</a>
 									<ul class="sub-menu">
+
+								<li><a href="#page"> Pages</a>
+									{{-- <ul class="sub-menu">
 										<li><a href="about.html">About</a></li>
 										<li><a href="team.html">Team Member</a></li>
 										<li><a href="team-details.html">Team Details</a></li>
 										<li><a href="faq.html">FAQ</a></li>
 										<li><a href="contact.html">Contact</a></li>
-									</ul>
+									</ul> --}}
 								</li>
 								<li><a href="news">News </a>
 									<ul class="sub-menu">
-										<li><a href="blog.html">Blog Grid</a></li>
-										<li><a href="blog-details.html">Blog Details</a></li>
+										{{-- <li><a href="blog.html">Blog Grid</a></li> --}}
+										<li><a href="{{ route('detailpage') }}">Details</a></li>
 									</ul>
 								</li>
 								<li><a href="{{ route('contactpage') }}">Contact</a></li>
@@ -118,7 +122,7 @@
 				{{-- <div class="col-lg-3 col-md-6">
 					<div class="single_footer">
 						<div class="single_footer_title pb-2">
-							<img src="{{ asset('front/images/1.png')}}" alt="" />
+							<img src="{{ asset('front/images/logo.png')}}" alt="" />
 						</div>
 						<div class="single_footer_text">
 							<p>The point of using Lorem Ipsum is that it has a more-or-less normal distrition of letters, as opposed to using </p>
@@ -176,7 +180,7 @@
                             <li><a href="#">Office No. 4, Nay Pyi Taw, Myanmar</a></li>
                             <li><a href="#">+95 67 3431071</a></li>
                             <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="" mailto:@CrystalCMS.Settings.ContactEmail"></i>info@mohs.gov.mm</a></a></li>
+                            <li><a href="#"> mailto:@CrystalCMS.Settings.ContactEmail></i>info@mohs.gov.mm</a></a></li>
                         </ul>
                     </div>
                 {{-- </div> --}}
