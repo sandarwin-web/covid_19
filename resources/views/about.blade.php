@@ -1,32 +1,5 @@
-
 @extends('master')
 @section('content')
-
-<!-- ============================================================== -->
-	<!-- Start - Corona Breatcome Area -->
-	<!-- ============================================================== -->
-	<div class="breatcome_area d-flex align-items-center">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breatcome_title pt-50">
-						<div class="breatcome_title_inner pb-2">
-							<h2>About Us</h2>
-						</div>
-						<div class="breatcome_content">
-							<ul>
-								<li><a href="index.html">Home</a> <i class="fa fa-angle-right"></i> <a href="#"> Pages</a> <i class="fa fa-angle-right"></i> <span>About</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- ============================================================== -->
-	<!-- End - Corona Breatcome Area -->
-	<!-- ============================================================== -->
-	
 	<!-- ============================================================== -->
 	<!-- Start - Corona About Area -->
 	<!-- ============================================================== -->
@@ -36,13 +9,13 @@
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="single_about_thumb mb-4">
-						<img src="assets/images/about1.jpg" alt="" />
+						<img src="{{ asset('front/images/doctor3.png')}}" alt="" />
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="section_title left pb-4">
 						<div class="section_title_thumb rotateme">
-							<img src="assets/images/lg.png" alt="" />
+							<img src="{{ asset('front/images/lg.png')}}" alt="" />
 						</div>
 						<div class="section_title_content pt-80">
 							<h5>ABOUT CORONA VIRUS</h5>
@@ -52,7 +25,8 @@
 					</div>
 					<div class="single_about mb-2">
 						<div class="single_about_icon mr-2">
-							<i class="fa fa-check-circle"></i>
+							{{-- <i class="fa fa-check-circle"></i> --}}
+							<i class="icofont-check-circled"></i>
 						</div>
 						<div class="single_about_text">
 							<p>Once contaminated.</p>
@@ -60,7 +34,7 @@
 					</div>
 					<div class="single_about mb-2">
 						<div class="single_about_icon mr-2">
-							<i class="fa fa-check-circle"></i>
+							<i class="icofont-check-circled"></i>
 						</div>
 						<div class="single_about_text">
 							<p>Hands can transfer the virus</p>
@@ -68,17 +42,17 @@
 					</div>
 					<div class="single_about mb-2">
 						<div class="single_about_icon mr-2">
-							<i class="fa fa-check-circle"></i>
+							<i class="icofont-check-circled"></i>
 						</div>
 						<div class="single_about_text">
 							<p>The most symptoms COVID-19 fever</p>
 						</div>
 					</div>
-					<div class="about_button pt-3">
+					{{-- <div class="about_button pt-3">
 						<div class="button">
 							<a href="#">More About</a>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 			</div>
 		</div>
@@ -90,7 +64,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="section_title left pb-4">
 						<div class="section_title_thumb rotateme">
-							<img src="assets/images/lg.png" alt="" />
+							<img src="{{ asset('front/images/lg.png')}}" alt="" />
 						</div>
 						<div class="section_title_content pt-80">
 							<h5>MORE INFORMATION COVID -19</h5>
@@ -130,7 +104,7 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="single_about_thumb mt-4">
-						<img src="assets/images/about2.png" alt="" />
+						<img src="{{ asset('front/images/about2.png')}}" alt="" />
 					</div>
 				</div>
 			</div>
@@ -144,7 +118,7 @@
 		<!-- ============================================================== -->
 	<!-- Start - Corona Team Area -->
 	<!-- ============================================================== -->
-	<div class="team_area bg_img pb-50 pt-80">
+	{{-- <div class="team_area bg_img pb-50 pt-80">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -240,7 +214,7 @@
 				
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	
 	<!-- ============================================================== -->
 	<!-- End - Corona Team Area -->
@@ -255,10 +229,10 @@
 				<div class="col-lg-12">
 					<div class="section_title center mb-5">
 						<div class="section_title_thumb rotateme">
-							<img src="assets/images/lg.png" alt="" />
+							<img src="{{ asset('front/images/lg.png')}}" alt="" />
 						</div>
 						<div class="section_title_content pt-2">
-							<h5>F A Q</h5>
+							{{-- <h5>F A Q</h5> --}}
 							<h2>Some Question & Answer</h2>
 							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
 						</div>
@@ -345,7 +319,7 @@
 				<div class="col-lg-12">
 					<div class="section_title center mb-5">
 						<div class="section_title_thumb rotateme">
-							<img src="assets/images/lg.png" alt="" />
+							<img src="{{ asset('front/images/lg.png')}}" alt="" />
 						</div>
 						<div class="section_title_content pt-2">
 							<h5>Prevention</h5>
@@ -360,7 +334,7 @@
 					<div class="main_prevention mr-3">
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/s1.png" alt="" />
+								<img src="{{ asset('front/images/s1.png')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Coughing And Seneezing</h4>
@@ -369,7 +343,7 @@
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/about2.png" alt="" />
+								<img src="{{ asset('front/images/about2.png')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Ware a face mask outside</h4>
@@ -378,7 +352,7 @@
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/pr6.png" alt="" />
+								<img src="{{ asset('front/images/pr6.png')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Cover your cough tissue paper</h4>
@@ -387,7 +361,7 @@
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/doctor4.jpg" alt="" />
+								<img src="{{ asset('front/images/doctor4.jpg')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Check your body regulerly</h4>
@@ -400,7 +374,7 @@
 					<div class="main_prevention ml-3">
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/pr1.png" alt="" />
+								<img src="{{ asset('front/images/pr1.png')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Avoid contact with sick people</h4>
@@ -409,7 +383,7 @@
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/pr2.png" alt="" />
+								<img src="{{ asset('front/images/pr2.png')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Avoid crowded places</h4>
@@ -418,7 +392,7 @@
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/pr3.png" alt="" />
+								<img src="{{ asset('front/images/pr3.png')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Avoid contact animals</h4>
@@ -427,7 +401,7 @@
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="assets/images/pr5.png" alt="" />
+								<img src="{{ asset('front/images/pr5.png')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Contaminated objects</h4>

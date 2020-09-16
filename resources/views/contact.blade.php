@@ -1,28 +1,6 @@
 
 @extends('master')
 @section('content')
-
-<div class="breatcome_area d-flex align-items-center">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breatcome_title pt-50">
-						<div class="breatcome_title_inner pb-2">
-							<h2>Conatact Us</h2>
-						</div>
-						<div class="breatcome_content">
-							<ul>
-								<li><a href="index.html">Home</a> <i class="fa fa-angle-right"></i> <a href="#"> Pages</a> <i class="fa fa-angle-right"></i> <span>Contact</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- ============================================================== -->
-	<!-- End - Corona Breatcome Area -->
-	<!-- ============================================================== -->
 	
 	<!-- ============================================================== -->
 	<!-- Start - Corona Contact Now Area -->
@@ -33,7 +11,7 @@
 				<div class="col-lg-12">
 					<div class="section_title center color_black mb-5">
 						<div class="section_title_thumb rotateme">
-							<img src="assets/images/lg.png" alt="" />
+							<img src="{{ asset('front/images/lg.png')}}" alt="" />
 						</div>
 						<div class="section_title_content pt-2">
 							<h2>Contact Now</h2>
@@ -102,7 +80,7 @@
 				<div class="col-lg-12">
 					<div class="section_title center color_black mb-5">
 						<div class="section_title_thumb rotateme">
-							<img src="assets/images/lg.png" alt="" />
+							<img src="{{ asset('front/images/lg.png')}}" alt="" />
 						</div>
 						<div class="section_title_content pt-2">
 							<h2>Get In Touch</h2>

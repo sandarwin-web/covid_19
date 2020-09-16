@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Positive;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -30,5 +30,18 @@ class PageController extends Controller
     {
     	# code...
     	return view('contact');
+    }
+
+    public function newsfun($value='')
+    {
+        # code...
+        $positives=Positive::all();
+        return view('news',compact('positives'));
+        // return view('news');
+    }
+     public function detailfun($value='')
+    {
+        # code...
+        return view('details');
     }
 }

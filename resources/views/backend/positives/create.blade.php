@@ -20,7 +20,7 @@
 					<span class="text-danger">{{$errors->first('gender')}}</span>
 				</div>
 			</div>
-S
+
 
 			<div class="form-group row">
 				<label  class="col-sm-2 col-form-label">Address</label>
