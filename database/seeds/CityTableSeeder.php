@@ -14,7 +14,6 @@ class CityTableSeeder extends Seeder
     {
 
         //
-<<<<<<< HEAD
        
     	factory(App\City::class,2)->create()->each(
     		function($city){
@@ -43,8 +42,8 @@ class CityTableSeeder extends Seeder
             });
 
 
-            factory(App\City::class,2)->create();
-=======
+            //factory(App\City::class,2)->create();
+
         factory(App\City::class,3)->create()->each(
             function($city){
                 //seed the relation with 3 subcategoriese
@@ -55,7 +54,7 @@ class CityTableSeeder extends Seeder
 
 
         factory(App\City::class,2)->create();
->>>>>>> 81c14407ce1a4da6c29c084b9339548c1522f122
+
 
 
     }

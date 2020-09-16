@@ -34,7 +34,7 @@ $factory->define(City::class, function (Faker $faker) {
            'contact' =>$faker->sentence($nbWords =3)
     ];
 });
-<<<<<<< HEAD
+
 
 $factory->define(Quarantine::class,function (Faker $faker)
 {
@@ -72,6 +72,5 @@ $factory->define(Active::class,function (Faker $faker)
 		'qty'=>$faker->qty
 	];
 });
-=======
+
    
->>>>>>> 81c14407ce1a4da6c29c084b9339548c1522f122

@@ -3,7 +3,7 @@
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
 		
-	<h1 class="h3 mb-0 text-gray-800">Quarantine List</h1><br>
+	<h1 class="h3 mb-0 text-gray-800">Active List</h1><br>
 	<a href="{{route('actives.create')}}" class="btn btn-success">Add New</a>
 	</div>
 	<div class="row">

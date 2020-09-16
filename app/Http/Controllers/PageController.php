@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Comfirmed;
+use App\City;
 class PageController extends Controller
 {
     //
     public function mainfun($value='')
     {
-    	# code...
+       // $con = Comfirmed::confirmed('qty')
+       //  dd(count($con));
     	return view('main');
     }
 

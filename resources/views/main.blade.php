@@ -59,7 +59,7 @@
 							</div>
 							<div class="slider_text_inner pt-200">
 								<h1>Prevention of Corona Virus Disease</h1>
-								<h2>Confirmed Corona Cases : <span class="cass_active">1054</span></h2>
+								<h2>Confirmed Corona Cases : <span class="cass_active"></span></h2>
 								<ul>
 									<li>All Cases: 7454</li>
 									<li>Recovered cases : 30504</li>
