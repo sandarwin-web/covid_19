@@ -15,7 +15,7 @@
 						<div class="section_title_content pt-2">
 							<h5>Service Virus</h5>
 							<h2>Corona Virus Symptoms</h2>
-							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
+							{{-- <p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p> --}}
 						</div>
 					</div>
 				</div>
@@ -109,7 +109,7 @@
 						<div class="section_title_content pt-2">
 							<h5>Prevention</h5>
 							<h2>Prevention & Advice Specialist</h2>
-							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
+							{{-- <p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p> --}}
 						</div>
 					</div>
 				</div>
@@ -149,7 +149,7 @@
 								<h4>Cover your cough tissue paper</h4>
 								<p>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
 
-</p>
+								</p>
 							</div>
 						</div>
 						<div class="single_prevention mb-4">
@@ -192,7 +192,7 @@
 
 								<img src="{{ asset('front/images/gething.jpg')}}" alt="" />
 
-							
+
 							</div>
 							<div class="single_prevention_content">
 								<h4>Gathering</h4>
@@ -217,7 +217,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	
 	<!-- ============================================================== -->
 	<!-- End - Corona Prevention Area -->

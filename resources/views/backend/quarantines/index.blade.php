@@ -11,8 +11,10 @@
 			<thead>
 				<tr>
 					<th>No</th>
+					<th>Name</th>
 					<th>Type</th>
 					<th>Addesss</th>
+					<th>Contact</th>
 					<th>Action</th>
 				</tr>
 			</thead>
@@ -21,8 +23,10 @@
 				@foreach($quarantines as $quarantine)
 				<tr>
 					<th>{{$i++}}</th>
+					<td>{{$quarantine->name}}</td>
 					<td>{{$quarantine->type}}</td>
 					<td>{{$quarantine->address}}</td>
+					<td>{{$quarantine->contact}}</td>
 					<td>
 						<form action="{{route('quarantines.destroy',$quarantine->id)}}" method="post" onsubmit="return confirm('Are you Sure Want to Delete!')" class="d-inline-block">
                         @csrf

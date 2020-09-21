@@ -43,15 +43,19 @@ class QuarantineController extends Controller
     {
          $request->validate([
             
+            "name"=>'required',
             "type"=>'required',
             "address"=>'required',
+            "contact"=>'required',
             "city_id"=>'required'
         ]);
 
        //Data insert
         $quarantine = new Quarantine;
+        $quarantine->name =$request->name;
         $quarantine->type =$request->type;
         $quarantine->address =$request->address;
+        $quarantine->contact =$request->contact;
         $quarantine->city_id =$request->city_id;
         $quarantine->save();
 
@@ -94,14 +98,18 @@ class QuarantineController extends Controller
     {
         $request->validate([
             
+            "name"=>'required',
             "type"=>'required',
-            "address"=>'required'
+            "address"=>'required',
+            "contact"=>'required'
         ]);
 
        //Data insert
         //$quarantine = new Quarantine;
+        $quarantine->name =$request->name;
         $quarantine->type =$request->type;
         $quarantine->address =$request->address;
+        $quarantine->contact =$request->contact;
         $quarantine->save();
 
        //redirect 

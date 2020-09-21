@@ -26,7 +26,7 @@
 						<div class="section_title_content pt-80">
 							<h5>ABOUT CORONA VIRUS</h5>
 							<h2>Corona Virus Is More Dangerous In The All World</h2>
-							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal forest congestion, runny nose, sore throat or diarrhea. </p>
+							<p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. </p>
 						</div>
 					</div>
 					<div class="single_about mb-2">
@@ -35,7 +35,7 @@
 							<i class="icofont-check-circled"></i>
 						</div>
 						<div class="single_about_text">
-							<p>Once contaminated.</p>
+							<p>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
 						</div>
 					</div>
 					<div class="single_about mb-2">
@@ -43,17 +43,10 @@
 							<i class="icofont-check-circled"></i>
 						</div>
 						<div class="single_about_text">
-							<p>Hands can transfer the virus</p>
+							<p>People with COVID-19 generally develop signs and symptoms, including mild respiratory symptoms and fever, on an average of 5-6 days after infection (mean incubation period 5-6 days, range 1-14 days). Most people infected with COVID-19 virus have mild disease and recover.</p>
 						</div>
 					</div>
-					<div class="single_about mb-2">
-						<div class="single_about_icon mr-2">
-							<i class="icofont-check-circled"></i>
-						</div>
-						<div class="single_about_text">
-							<p>The most symptoms COVID-19 fever</p>
-						</div>
-					</div>
+
 					{{-- <div class="about_button pt-3">
 						<div class="button">
 							<a href="#">More About</a>
@@ -75,42 +68,35 @@
 						<div class="section_title_content pt-80">
 							<h5>MORE INFORMATION COVID -19</h5>
 							<h2>Take More Information About Corona Visus.</h2>
-							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal forest congestion, runny nose, sore throat or diarrhea.p>
+							<p>he best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.<p>
 						</div>
 					</div>
 					<div class="single_about mb-2">
 						<div class="single_about_icon mr-2">
-							<i class="fa fa-check-circle"></i>
+							{{-- <i class="fa fa-check-circle"></i> --}}
 						</div>
 						<div class="single_about_text">
-							<p>Once contaminated.</p>
+							<p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
 						</div>
 					</div>
 					<div class="single_about mb-2">
 						<div class="single_about_icon mr-2">
-							<i class="fa fa-check-circle"></i>
+							{{-- <i class="fa fa-check-circle"></i> --}}
 						</div>
 						<div class="single_about_text">
-							<p>Hands can transfer the virus</p>
+							<p>At this time, there are no specific vaccines or treatments for COVID-19. However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.</p>
 						</div>
 					</div>
-					<div class="single_about mb-2">
-						<div class="single_about_icon mr-2">
-							<i class="fa fa-check-circle"></i>
-						</div>
-						<div class="single_about_text">
-							<p>The most symptoms COVID-19 fever</p>
-						</div>
-					</div>
-					<div class="about_button pt-3">
+					
+					{{-- <div class="about_button pt-3">
 						<div class="button">
 							<a href="#">More About</a>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<div class="single_about_thumb mt-4">
-						<img src="{{ asset('front/images/about2.png')}}" alt="" />
+						<img src="{{ asset('front/images/about2.jpg')}}" alt="" />
 					</div>
 				</div>
 			</div>
@@ -295,13 +281,13 @@
 						<div class="card-header" id="headingFour">
 						  <h5 class="mb-0">
 							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-							   Symptoms & Testing
+							   What type of mask should you use for the coronavirus disease?
 							</button>
 						  </h5>
 						</div>
 						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 						  <div class="card-body">
-							Coronaviruses are a large family of viruses. Some cause illness in people, and others, such as canine and feline coronaviruses, only infect animals. Rarely, animal coronaviruses that infect animals have emerged to infect people and can spread between people. This is suspected to have occurred for the virus that causes COVID-19. Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS) are two other examples of coronaviruses that originated from animals and then spread to people. More information about the source and spread of COVID-19 is available on the Situation Summary: Source and Spread of the Virus.
+							Medical masks are surgical or procedure masks that are flat or pleated (some are like cups); they are affixed to the head with strapsa. Wearing a medical mask is one of the prevention measures to limit spread of certain respiratory diseases, including 2019- nCoV, in affected areas.
 						  </div>
 						</div>
 					  </div>
@@ -316,112 +302,5 @@
 	<!-- End - Corona Accordion Area -->
 	<!-- ============================================================== -->
 	
-		<!-- ============================================================== -->
-	<!-- Start - Corona Prevention Area -->
-	<!-- ============================================================== -->
-	<div class="prevention_area bg_img pb-60 pt-80">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section_title center mb-5">
-						<div class="section_title_thumb rotateme">
-							<img src="{{ asset('front/images/lg.png')}}" alt="" />
-						</div>
-						<div class="section_title_content pt-2">
-							<h5>Prevention</h5>
-							<h2>Prevention & Advice Specialist</h2>
-							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<div class="main_prevention mr-3">
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/s1.png')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Coughing And Seneezing</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/about2.png')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Ware a face mask outside</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/pr6.png')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Cover your cough tissue paper</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/doctor4.jpg')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Check your body regulerly</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12">
-					<div class="main_prevention ml-3">
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/pr1.png')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Avoid contact with sick people</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/pr2.png')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Avoid crowded places</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/pr3.png')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Avoid contact animals</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-						<div class="single_prevention mb-4">
-							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/pr5.png')}}" alt="" />
-							</div>
-							<div class="single_prevention_content">
-								<h4>Contaminated objects</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
 	
-	<!-- ============================================================== -->
-	<!-- End - Corona Prevention Area -->
-	<!-- ============================================================== -->
 @endsection	

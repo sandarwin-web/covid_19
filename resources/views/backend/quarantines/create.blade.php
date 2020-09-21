@@ -14,12 +14,29 @@
 			</div>
 
 			<div class="form-group row">
+				<label  class="col-sm-2 col-form-label">Name</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="name">
+					<span class="text-danger">{{$errors->first('name')}}</span>
+				</div>
+			</div>
+
+			<div class="form-group row">
 				<label  class="col-sm-2 col-form-label">Address</label>
 				<div class="col-sm-10">
 					<input type="text" class="form-control" name="address">
 					<span class="text-danger">{{$errors->first('address')}}</span>
 				</div>
 			</div>
+
+			<div class="form-group row">
+				<label  class="col-sm-2 col-form-label">Contact</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" name="contact">
+					<span class="text-danger">{{$errors->first('contact')}}</span>
+				</div>
+			</div>
+
 
             <div class="form-group row">
 				<label  class="col-sm-2 col-form-label">City Name</label>

@@ -5,7 +5,7 @@ use App\Positive;
 use Illuminate\Http\Request;
 
 use App\Helpservice;
-
+use App\Quarantine;
 use App\Comfirmed;
 
 use App\Deceased;
@@ -48,24 +48,14 @@ class PageController extends Controller
 
     public function contactfun(Request $request)
     {
-    	# code...
-        // $helpservices = Helpservice::All();
-        //dd($helpservice);
-        // return view('contact',compact('helpservices'));
-
-
-
-        // $cities = City::where('name', 'like', '%' . $request->search_value . '%')->get();
-        // //$city_id = $request->city_id;
-        // $helpservices=Helpservice::all();
-        // //$helpservices = Helpservice::where('city_id',$city_id)->get();
-        // return view('contact',compact('helpservices','cities'));
+    	
     	
         $city_id = $request->city_id;
         $helpservices=Helpservice::all();
+        $quarantines=Quarantine::all();
         $cities=City::all();
         
-         return view('contact',compact('helpservices','cities'));
+         return view('contact',compact('helpservices','cities','quarantines'));
         
     }
 
@@ -94,5 +84,13 @@ class PageController extends Controller
      public function searchhelp(Request $request){
        $help = Helpservice::where('city_id',$request->city)->get();
        return response()->json(['help'=>$help]);
+    }
+
+    public function searchquarant(Request $request)
+    {
+        
+       $quarant = Quarantine::where('city_id',$request->city)->get();
+       return response()->json(['quarant'=>$quarant]);
+
     }
 }

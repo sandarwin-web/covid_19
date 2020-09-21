@@ -8,7 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('front/css/bootstrap.min.css')}}" type="text/css" media="all" />
 
@@ -93,7 +94,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="single_footer">
                     <div class="single_footer_title pb-4">
-                        <h5>Related UN Organizations And NGOs</h5>
+                        <h5 class="text-light">Related UN Organizations And NGOs</h5>
                     </div>
                     <div class="single_footer_body">
                         <ul>
@@ -111,18 +112,18 @@
                 </div>
             </div>
             {{-- div class="col-lg-3 col-md-6"> --}}
-            <div class="col-xs-12 col-sm-12 col-md-4  hidden-xs hidden-sm">
+            <div class="col-xs-12 col-sm-12 col-md-4  hidden-xs hidden-sm" >
                 <div class="footer-logo footertop-menu">
 
-                    <h5 style="font-family: Myanmar3;"></i> ဝန်ကြီးဌာနများ၏ Website များ</h5><br>
-                    <ul>
-                        <li><a href="http://www.president-office.gov.mm/" target="_blank">President Office</a></li>
-                        <li><a href="http://www.mofa.gov.mm/" target="_blank">Ministry of Foreign Affairs</a></li>
-                        <li><a href="http://www.myanmarmoha.org/index.php?lang=en" target="_blank">Ministry of Home Affairs</a></li>
-                        <li><a href="http://www.mod.gov.mm/">Ministry of Defense</a></li>
-                        <li><a href="http://www.mba.gov.mm/">Ministry of Border Affairs</a></li>
-                        <li><a href="http://www.statecounsellor.gov.mm/" target="_blank">Myanmar State Counsellor Office</a></li>
-                        <li><a href="http://www.mohs.gov.mm/Main/content/page/other-ministry-web-sites" target="_blank">Other Ministry Websites</a></li>
+                    <h5 style="font-family: Myanmar3;" class="text-light"></i> ဝန်ကြီးဌာနများ၏ Website များ</h5><br>
+                    <ul class="text-light">
+                        <li ><a href="http://www.president-office.gov.mm/" class="text-light" target="_blank">President Office</a></li>
+                        <li><a href="http://www.mofa.gov.mm/" class="text-light" target="_blank">Ministry of Foreign Affairs</a></li>
+                        <li><a href="http://www.myanmarmoha.org/index.php?lang=en" class="text-light"  class="text-light" target="_blank">Ministry of Home Affairs</a></li>
+                        <li><a href="http://www.mod.gov.mm/" class="text-light" >Ministry of Defense</a></li>
+                        <li><a href="http://www.mba.gov.mm/" class="text-light">Ministry of Border Affairs</a></li>
+                        <li><a href="http://www.statecounsellor.gov.mm/" class="text-light" target="_blank">Myanmar State Counsellor Office</a></li>
+                        <li><a href="http://www.mohs.gov.mm/Main/content/page/other-ministry-web-sites" class="text-light" target="_blank">Other Ministry Websites</a></li>
                     </ul>
                 </div>
             {{--  </div> --}}
@@ -130,12 +131,12 @@
         {{-- <div class="col-lg-3 col-md-6"> --}}
             <div class="col-xs-12 col-sm-12 col-md-4">
                 <div class="footer-logo footertop-menu fmenu4">
-                    <h5>CONTACT</h5>
+                    <h5 class="text-light">CONTACT</h5>
                     <ul>
-                        <li><a href="#">Office No. 4, Nay Pyi Taw, Myanmar</a></li>
-                        <li><a href="#">+95 67 3431071</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                        <li><a href="#"> mailto:@CrystalCMS.Settings.ContactEmail></i>info@mohs.gov.mm</a></a></li>
+                        <li ><a href="#" class="text-light">Office No. 4, Nay Pyi Taw, Myanmar</a></li>
+                        <li><a href="#" class="text-light">+95 67 3431071</a></li>
+                        <li><a href="/contact" class="text-light">Contact Us</a></li>
+                        <li><a href="#" class="text-light"> mailto:@CrystalCMS.Settings.ContactEmail></i>info@mohs.gov.mm</a></a></li>
                     </ul>
                 </div>
             {{-- </div> --}}

@@ -43,6 +43,10 @@ Route::get('details', 'PageController@detailfun'
 Route::post('searchhelp','PageController@searchhelp')->name('searchhelp');
 
 
+Route::post('searchquarant','PageController@searchquarant')->name('searchquarant');
+
+
+
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
 Route::resource('cities','CityController');

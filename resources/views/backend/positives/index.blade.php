@@ -1,31 +1,6 @@
 @extends('backendtemplate')
 @section('content')
 
-
-
-
-
-{{-- <div class="col-md-4">
- <form action="/search" method="get">
- 	<div class="input-group">
- 		<input type="search" name="search" class="form-control">
- 		<span class="input-group-prepend">
- 			<button type="submit" class="btn btn-success">Search</button>
- 		</span>
- 	</div>
- </form>
-</div> --}}
-
-
-
-
-
-
-
-   
-
-
-
 <div class="container-fluid">
 	<div class="d-sm-flex align-items-center justify-content-between mb-4">
 		

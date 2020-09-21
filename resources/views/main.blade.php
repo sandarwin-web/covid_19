@@ -10,21 +10,14 @@
 	<div class="menu_area mobile-menu">
 		<nav class="corona_menu">
 			<ul class="nav_scroll">
-				<li><a href="#home"> Home</a>
-				</li>
+				<li><a href="#home"> Home</a></li>
 				<li><a href="about.html"> About</a></li>
 				<li><a href="prevention.html"> Prevention</a></li>
-			</li>
-			<li><a href="#news">News </a>
-				<ul class="sub-menu">
-					<li><a href="blog.html">Blog Grid</a></li>
-					<li><a href="blog-details.html">Blog Details</a></li>
-				</ul>
-			</li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-</div>					
+				<li><a href="#news">News </a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>					
 </div>			
 <!-- ============================================================== -->
 <!-- End - Mobile Menu Area -->
@@ -119,12 +112,7 @@
 					<div class="single_service_title pt-3 pb-1">
 						<h4>Coughing And Sneezing</h4>
 					</div>
-					<div class="single_service_text pt-4">
-						<p>Libero perspiciatis sequi delectus, maxime, voluptatum minima nam consectetur dolore</p>
-					</div>
-					<div class="single_service_button">
-						<a href="#">Read More</a>
-					</div>
+					
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
@@ -134,12 +122,6 @@
 					</div>
 					<div class="single_service_title pt-3 pb-1">
 						<h4>Strong Headacke</h4>
-					</div>
-					<div class="single_service_text pt-4">
-						<p>Libero perspiciatis sequi delectus, maxime, voluptatum minima nam consectetur dolore</p>
-					</div>
-					<div class="single_service_button">
-						<a href="#">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -151,12 +133,7 @@
 					<div class="single_service_title pt-3 pb-1">
 						<h4>Confusion</h4>
 					</div>
-					<div class="single_service_text pt-4">
-						<p>Libero perspiciatis sequi delectus, maxime, voluptatum minima nam consectetur dolore</p>
-					</div>
-					<div class="single_service_button">
-						<a href="#">Read More</a>
-					</div>
+					
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
@@ -167,12 +144,7 @@
 					<div class="single_service_title pt-3 pb-1">
 						<h4>Hot Fever</h4>
 					</div>
-					<div class="single_service_text pt-4">
-						<p>Libero perspiciatis sequi delectus, maxime, voluptatum minima nam consectetur dolore</p>
-					</div>
-					<div class="single_service_button">
-						<a href="#">Read More</a>
-					</div>
+					
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
@@ -183,12 +155,7 @@
 					<div class="single_service_title pt-3 pb-1">
 						<h4>Shortness Of Breath</h4>
 					</div>
-					<div class="single_service_text pt-4">
-						<p>Libero perspiciatis sequi delectus, maxime, voluptatum minima nam consectetur dolore</p>
-					</div>
-					<div class="single_service_button">
-						<a href="#">Read More</a>
-					</div>
+
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12">
@@ -199,22 +166,12 @@
 					<div class="single_service_title pt-3 pb-1">
 						<h4>Sore Throat</h4>
 					</div>
-					<div class="single_service_text pt-4">
-						<p>Libero perspiciatis sequi delectus, maxime, voluptatum minima nam consectetur dolore</p>
-					</div>
-					<div class="single_service_button">
-						<a href="#">Read More</a>
-					</div>
 				</div>
 			</div>
 
 		</div>
 	</div>
 </div>
-<!-- ============================================================== -->
-<!-- End - Corona Service Area -->
-<!-- ============================================================== -->
-
 <!-- ============================================================== -->
 <!-- Start - Corona About Area -->
 <!-- ============================================================== -->
@@ -515,7 +472,7 @@
 						<div class="section_title_content pt-2">
 							<h5>Prevention</h5>
 							<h2>Prevention & Advice Specialist</h2>
-							<p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p>
+							{{-- <p>The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Also the symptoms may appear 2-14 days after exposure.</p> --}}
 						</div>
 					</div>
 				</div>
@@ -525,38 +482,47 @@
 					<div class="main_prevention mr-3">
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/1.png')}}" alt="" />
+
+								<img src="{{ asset('front/images/cough.jpg')}}" alt="" />
+
+
 							</div>
 							<div class="single_prevention_content">
 								<h4>Coughing And Seneezing</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<p>If you have a fever, a cough, and difficulty breathing, seek medical attention.</p>
 							</div>
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/facemask.jpg')}}" alt="" />
+
+								<img src="{{ asset('front/images/wear.jpg')}}" alt="" />
+
 							</div>
 							<div class="single_prevention_content">
 								<h4>Ware a face mask outside</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<p>Always wear a mask, be sure to cover mouth and nose – Avoid touching mask once it is on.</p>
 							</div>
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/6.png')}}" alt="" />
+
+								<img src="{{ asset('front/images/paper.jpg')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Cover your cough tissue paper</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<p>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+
+								</p>
 							</div>
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/4.png')}}" alt="" />
+
+								<img src="{{ asset('front/images/body.jpg')}}" alt="" />
 							</div>
 							<div class="single_prevention_content">
 								<h4>Check your body regulerly</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<p>Check your fever and symptoms on daily basis.</p>
 							</div>
 						</div>
 					</div>
@@ -565,38 +531,47 @@
 					<div class="main_prevention ml-3">
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/risk.jpg')}}" alt="" />
+
+								<img src="{{ asset('front/images/avoid.jpg')}}" alt="" />
+
 							</div>
 							<div class="single_prevention_content">
 								<h4>Avoid contact with sick people</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<p>Maintain a safe distance from anyone who is coughing or sneezing.</p>
 							</div>
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/2.png')}}" alt="" />
+								<img src="{{ asset('front/images/place.jpg')}}" alt="" />
+
 							</div>
 							<div class="single_prevention_content">
 								<h4>Avoid crowded places</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<p>Avoid to visit risk places, it can be dangerous for you.</p>
 							</div>
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/3.png')}}" alt="" />
+
+								<img src="{{ asset('front/images/gething.jpg')}}" alt="" />
+
+
 							</div>
 							<div class="single_prevention_content">
-								<h4>Avoid contact animals</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<h4>Gathering</h4>
+								<p>Avoid mass gathering and crowded places.</p>
 							</div>
 						</div>
 						<div class="single_prevention mb-4">
 							<div class="single_prevention_thumb mr-3">
-								<img src="{{ asset('front/images/5.png')}}" alt="" />
+
+								<img src="{{ asset('front/images/conta.jpg')}}" alt="" />
+
+								
 							</div>
 							<div class="single_prevention_content">
 								<h4>Contaminated objects</h4>
-								<p>Libero perspiciatis delectus, maxime, voluptatum minima nam consectetur dolore</p>
+								<p>Do not touch any object on public places it can be infected</p>
 							</div>
 						</div>
 					</div>
