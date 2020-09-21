@@ -15,7 +15,7 @@ class CreateTestedsTable extends Migration
     {
        Schema::create('testeds', function (Blueprint $table) {
             $table->id();
-            $table->string('date');
+            $table->date('date');
             $table->integer('qty');
             $table->unsignedBigInteger('city_id');
             $table->timestamps();

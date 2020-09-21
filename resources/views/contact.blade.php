@@ -7,40 +7,6 @@
 <br>
 <br>
 <br>
-{{-- 
-<div class="breatcome_area d-flex align-items-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="breatcome_title pt-50">
-					<div class="breatcome_title_inner pb-2">
-						<h2>Conatact Us</h2>
-					</div>
-					<div class="breatcome_content">
-						<ul>
-							<li><a href="index.html">Home</a> <i class="fa fa-angle-right"></i> <a href="#"> Pages</a> <i class="fa fa-angle-right"></i> <span>Contact</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> --}}
-<!-- ============================================================== -->
-<!-- End - Corona Breatcome Area -->
-<!-- ============================================================== -->
-
-<!-- ============================================================== -->
-<!-- Start - Corona Contact Now Area -->
-<!-- ============================================================== -->
-
-<!-- ============================================================== -->
-<!-- Start - Corona Contact Now Area -->
-<!-- ============================================================== -->
-
-<!-- ============================================================== -->
-<!-- Start - Corona Contact Area -->
-<!-- ============================================================== -->
 <div class="contact_area pt-80 pb-70 bg_color2" id="contact">
 	<div class="container">
 		<div class="row">
@@ -49,8 +15,37 @@
 					<div class="section_title_thumb rotateme">
 						<img src="assets/images/lg.png" alt="" />
 					</div>
+
+
+					
+						<div class="form-row">
+							<div class="col-lg-2">
+								<select name="city" class="form-control" id="city">
+									<option selected disabled>Choose City</option>
+									@foreach($cities as $city)
+									<option value="{{$city->id}}">{{$city->name}}</option>
+									@endforeach
+								</select>
+							</div>
+							<div class="col-lg-2">
+								<input type="button" id="search" class="btn btn-success" value="Search">
+							</div>
+						</div>
+					
+					{{-- <form method="get" action="#" class="mt-2">
+						<select class="mdb-select md-form" name="city_id">
+						  <option value="" disabled selected>Choose your city</option>
+						  <option value="1">1</option>
+						  <option value="2">3</option>
+						  <option value="3">7</option>
+						</select>
+					</form> --}}
+
+
+
+
 					<div class="section_title_content pt-2">
-						<h1>Health Service</h1><br>
+						<h1>Help Service</h1><br>
 
 						<table class="table table-hover">
 							<thead class="bg-info">
@@ -63,7 +58,7 @@
 									<th scope="col">Contact</th>
 								</tr>
 							</thead>
-							<tbody>
+							<tbody id="tbody">
 								@foreach ($helpservices as $helpservice)
 								<tr>
 									<th>{{ $helpservice->id }}</th>
@@ -75,6 +70,9 @@
 
 								</tr>
 								@endforeach
+							</tbody>
+							<tbody id="ttbody">
+								
 							</tbody>
 						</table>
 
@@ -143,4 +141,54 @@
 	</div>
 </div>	
 
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+@endsection
+
+@section('script')
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+		$('#ttbody').hide();
+		$('#search').click(function(){
+			$('#tbody').hide();
+			var city = $('#city').val();
+			//alert(city);
+			$.post('searchhelp',{city:city},function(response){
+				console.log(response.help);
+				if(response.help.length > 0){
+					var html = ''; var j=1;
+				$.each(response.help,function(i,v){
+					html+=`<tr>
+					<td>${j++}</td>
+					<td>${v.name}</td>
+					<td>${v.address}</td>
+					<td>${v.time}</td>
+					<td>${v.opening_day}</td>
+					<td>${v.contact}</td>
+					</tr>`;
+
+				});
+				$('#ttbody').html(html);
+				$('#ttbody').show();
+			}else{
+				$('#tbody').show();
+				$('#ttbody').hide();
+			}
+			})
+		})
+	})
+</script>
 @endsection

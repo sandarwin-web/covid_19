@@ -11,7 +11,7 @@ class Comfirmed extends Model
     ];
 
     public function city($value='')
-{
-    return $this->belongsTo('App\City');
-}
+	{
+	    return $this->belongsTo('App\City');
+	}
 }

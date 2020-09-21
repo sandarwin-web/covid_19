@@ -12,7 +12,7 @@ class Helpservice extends Model
 
     public function city($value='')
 {
-    return $this->belongsTo('App\City');
+    return $this->belongsTo('App\City','city_id');
 }
 
 

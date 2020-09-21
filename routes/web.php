@@ -40,6 +40,8 @@ Route::get('details', 'PageController@detailfun'
 )->name('detailpage');
 
 
+Route::post('searchhelp','PageController@searchhelp')->name('searchhelp');
+
 
 Route::get('dashboard', 'BackendController@dashboardfun'
 )->name('dashboardpage');
@@ -54,5 +56,7 @@ Route::resource('quarantines','QuarantineController');
 Route::resource('positives','PositiveController');
 Route::resource('actives','ActiveController');
 
+//Route::resource('/search','PositiveController@search');
 
+// Route::get('/search', 'PositiveController@search');
 

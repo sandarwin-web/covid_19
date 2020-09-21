@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 use App\Helpservice;
 
 use App\Comfirmed;
+
+use App\Deceased;
+use App\Recovered;
+
+
 use App\City;
 
 class PageController extends Controller
@@ -14,12 +19,20 @@ class PageController extends Controller
     //
     public function mainfun($value='')
     {
+         $comfirmeds = Comfirmed::sum('qty');
+         $deceaseds = Deceased::sum('qty'); 
+         $recovereds = Recovered::sum('qty');
+         // dd($comfirmeds);
+             
+        return view('main',compact('comfirmeds','deceaseds','recovereds'));
+
        // $con = Comfirmed::confirmed('qty')
        //  dd(count($con));
     	return view('main');
+
     }
 
-    //
+    
     public function aboutfun($value='')
     {
     	# code...
@@ -33,19 +46,42 @@ class PageController extends Controller
     }
     
 
-    public function contactfun($value='')
+    public function contactfun(Request $request)
     {
     	# code...
-        $helpservices = Helpservice::All();
+        // $helpservices = Helpservice::All();
         //dd($helpservice);
-        return view('contact',compact('helpservices'));
-    	//return view('contact');
+        // return view('contact',compact('helpservices'));
+
+
+
+        // $cities = City::where('name', 'like', '%' . $request->search_value . '%')->get();
+        // //$city_id = $request->city_id;
+        // $helpservices=Helpservice::all();
+        // //$helpservices = Helpservice::where('city_id',$city_id)->get();
+        // return view('contact',compact('helpservices','cities'));
+    	
+        $city_id = $request->city_id;
+        $helpservices=Helpservice::all();
+        $cities=City::all();
+        
+         return view('contact',compact('helpservices','cities'));
+        
     }
 
-    public function newsfun($value='')
+    public function newsfun(Request $request)
     {
-        # code...
-        $positives=Positive::all();
+        
+
+         $date= $request->date;
+         $positives=Positive::all();
+        // $cities=City::all();
+        $positives = Positive::where('date',$date)->get();
+         // return view('contact',compact('helpservices','cities'));
+
+
+
+       
         return view('news',compact('positives'));
         // return view('news');
     }
@@ -53,5 +89,10 @@ class PageController extends Controller
     {
         # code...
         return view('details');
+    }
+
+     public function searchhelp(Request $request){
+       $help = Helpservice::where('city_id',$request->city)->get();
+       return response()->json(['help'=>$help]);
     }
 }

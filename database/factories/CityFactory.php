@@ -42,15 +42,36 @@ $factory->define(Quarantine::class,function (Faker $faker)
 
 
 
-$factory->define(Positive::class,function (Faker $faker)
-{
-	return [
+// $factory->define(Positive::class,function (Faker $faker)
+// {
+// 	return [
 
-		'age'=>$faker->age,
-		'gender'=>$faker->gender,
-		'address'=>$faker->address,
-		'date'=>$faker->date
+// 		'age'=>$faker->age,
+// 		'gender'=>$faker->gender,
+// 		'address'=>$faker->address,
+// 		'date'=>$faker->date
 
+<<<<<<< HEAD
+		// 'age'=>$faker->sentence($nbWords=3),
+		// 'gender'=>$faker->sentence($nbWords=3),
+		// 'address'=>$faker->sentence($nbWords=3),
+		// 'date'=>$faker->sentence($nbWords=3)
+<<<<<<< HEAD
+// 	];
+// });
+
+
+// $factory->define(Active::class,function (Faker $faker)
+// {
+// 	return [
+// 		// 'qty'=>$faker->qty,
+// 		'date'=>$faker->date,
+// 		'qty'=>$faker->qty
+// 	];
+// });
+=======
+=======
+>>>>>>> 585d8a961c70e0f35c1f5c70bb187942eb435ff0
 	];
 });
 

@@ -57,7 +57,7 @@ class ComfirmedController extends Controller
         // $brand->photo= $path;
         $comfirmed->save();
         //redirect
-        return redirect()->route('recovereds.index');
+        return redirect()->route('comfirmeds.index');
     }
 
     /**
@@ -97,13 +97,8 @@ class ComfirmedController extends Controller
             
             "date" => 'required',
             "qty"  => 'required',
-            "city_id"  => 'required'
-
-
-            
+            "city_id"  => 'required' 
         ]);
-
-
         
         $comfirmed->date= $request->date;
         $comfirmed->qty= $request->qty;

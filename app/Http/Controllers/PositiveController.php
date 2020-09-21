@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Positive;
 use App\City;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
+use App\Helpservice;
 
 class PositiveController extends Controller
 {
@@ -13,13 +15,60 @@ class PositiveController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $positives=Positive::all();
-        // dd($positives);
-        return view('backend.positives.index',compact('positives'));
 
+         
+        $positives=Positive::all();
+       // $positives = Positive::where('date',$date)->get();
+      
+        return view('backend.positives.index',compact('positives'));
     }
+        
+
+        // dd($positives);
+
+
+        // $date1 = $request->sdate;
+        // $date2 = $request->edate;
+
+        // if ($request->sdate && $request->edate) {
+        //     $positives = Positive::whereBetween('date', [new Carbon($date1), new Carbon($date2)])->get();
+        // }else{
+        //     $positives=Positive::all();
+        // }
+
+        // return view('backend.positives.index',compact('positives'));
+            
+        // $date1 = $request->sdate;
+
+    
+        // $positives = Positive::where('date',$request->sdate)->get();
+        
+        
+        // return view('backend.positives.index',compact('positives'));
+
+    
+
+
+    
+
+    // public function search(Request $request)
+    // {
+
+    //      $date = $request->sdate;
+        
+    //     //$positives=Positive::all();
+    //      $positives = Positive::where('date',$date)->get();
+    //     return view('backend.positives.search',compact('positives'));
+    
+    //     //$positives = Positive::where('id',$id)->get();
+
+    //     // dd($positives);
+        
+
+    // }
+
 
     /**
      * Show the form for creating a new resource.
@@ -99,6 +148,21 @@ class PositiveController extends Controller
      * @param  \App\Positive  $positive
      * @return \Illuminate\Http\Response
      */
+
+    //  public function search(Request $request)
+    // {
+
+    //      $id = $request->id;
+    //     // $search = $request->get('search');
+        
+    //     // $positives=Positive::all();
+    //    // $positives = Positive::where('date',$date)->get();
+    //      // $positives  = DB::table('$positives')->where('id','like', '%' $search '%');
+    //     $positives = Positive::where('id',$id)->get();
+    //     return view('backend.positives.index',['positives' => $positives]);
+    // }
+        
+
     public function update(Request $request, Positive $positive)
     {
         //
@@ -139,4 +203,6 @@ class PositiveController extends Controller
 
         return redirect()->route('positives.index');
     }
+
+   
 }

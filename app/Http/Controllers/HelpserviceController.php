@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Helpservice;
 use Illuminate\Http\Request;
 use App\City;
+use Carbon\Carbon;
 
 class HelpserviceController extends Controller
 {
@@ -13,14 +14,14 @@ class HelpserviceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-         $helpservices=Helpservice::all();
+         
 
-          //dd($helpservices);
-          return view('backend.helpservice.index',compact('helpservices'));
         
-        // return view('backend.city.index',compact('cities'));
+        $helpservices=Helpservice::all();
+       
+        return view('backend.helpservice.index',compact('helpservices'));
     }
 
     /**
