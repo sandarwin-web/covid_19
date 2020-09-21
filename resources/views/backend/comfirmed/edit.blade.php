@@ -11,7 +11,7 @@
   <div class="form-group row">
     <label for="inputName3" class="col-sm-2 col-form-label">Date</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputName3" name="date" value="{{$comfirmed->date}}">
+      <input type="date" class="form-control" id="inputName3" name="date" value="{{$comfirmed->date}}">
       {{-- <span class="text-danger">{{$errors->first('date')}}</span> --}}
     </div>
   </div>

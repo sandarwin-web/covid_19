@@ -23,9 +23,6 @@
 <!-- End - Mobile Menu Area -->
 <!-- ============================================================== -->		
 
-<!-- ============================================================== -->
-<!-- Start - corona Slider Area -->
-<!-- ============================================================== -->
 <div class="slider_area d-flex align-items-center" id="home">
 	<div class="container">
 		<div class="row">
@@ -45,8 +42,8 @@
 	</div>
 
 	<div class="container">
-		<h1 class="text-white" style="text-align: center;">Prevention of Corona Virus Disease</h1>
-			<h2 class="text-white" style="text-align: center;">Confirmed Corona Cases : <span class="cass_active">{{$comfirmeds}}</span></h2>
+		<h1 class="text-white" style="text-align: center;">Prevention of Corona Virus Disease</h1><br>
+			<h2 class="text-white" style="text-align: center;">Confirmed Corona Cases : <span class="cass_active">{{$comfirmeds}}</span></h2><br>
 		<div class="row">
 
 			<div class="col-lg-4 text-white">	
@@ -76,6 +73,7 @@
 				border-radius: 30px;
 				height: 150px">Deaths <br><br>{{$deceaseds}}</div>
 			</div>
+
 		</div>  
 	</div>
 

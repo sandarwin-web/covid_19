@@ -29,7 +29,7 @@
                                         <button type="submit" class="btn btn-danger">Delete</button>
                                     </form>
 						<a href="{{ route('comfirmeds.edit',$comfirmed->id) }}" class="btn btn-primary">Edit</a>
-					<a href="{{route('comfirmeds.show',$comfirmed->id)}}" class="btn btn-primary">Detail</a></td>
+					</td>
 					</tr>
 					@endforeach
 					

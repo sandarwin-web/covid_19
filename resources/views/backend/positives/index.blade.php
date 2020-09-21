@@ -37,8 +37,7 @@
                         <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
 						<a href="{{route('positives.edit',$positive->id)}}" class="btn btn-warning">Edit</a>
-						<a href="#" class="btn btn-info">Detail</a>
-					</td>
+											</td>
 				</tr>
 
 				@endforeach

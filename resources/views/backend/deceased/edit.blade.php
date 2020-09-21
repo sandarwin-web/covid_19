@@ -16,7 +16,7 @@
 			<div class="form-group row">
 				<label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="inputEmail3" name="date" value="{{$deceased->date}}">
+					<input type="date" class="form-control" id="inputEmail3" name="date" value="{{$deceased->date}}">
 				</div>
 			</div>
 

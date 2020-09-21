@@ -29,7 +29,7 @@
                                         <button type="submit" class="btn btn-danger">Delete</button>
                                     </form>
 						<a href="{{ route('recovereds.edit',$recovered->id) }}" class="btn btn-primary">Edit</a>
-					<a href="{{route('recovereds.show',$recovered->id)}}" class="btn btn-primary">Detail</a></td>
+						</td>
 					</tr>
 					@endforeach
 					

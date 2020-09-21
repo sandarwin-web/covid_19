@@ -36,7 +36,7 @@
 						<button type="submit" class="btn btn-danger">Delete</button>
 					</form>
 					<a href="{{ route('helpservices.edit',$helpservice->id) }}" class="btn btn-primary">Edit</a>
-					<a href="{{route('helpservices.show',$helpservice->id)}}" class="btn btn-primary">Detail</a></td>
+					</td>
 				</tr>
 				@endforeach
 
