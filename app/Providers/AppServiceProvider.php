@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\View;
-use App\City;
+// use App\City;
 
 
 // use Illuminate\Support\Facades\Schema;
@@ -37,7 +37,7 @@ class AppServiceProvider extends ServiceProvider
     {
 
 
-        $cities=City::all();
+//         $cities=City::all();
         //view()->share('cities',$cities);
 
     }
